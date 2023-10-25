@@ -30,7 +30,8 @@
 
         li,
         h1,
-        h2 {
+        h2,
+        h3 {
             font-family: boucherie-block, sans-serif;
             font-weight: 400;
             font-style: normal;
@@ -68,10 +69,32 @@
 
         .proj-nav {
             width: 150px;
-            height: 250px;
+            height: 280px;
+            background: url("img/project-menu-bg.svg");
+            background-repeat: no-repeat;
+            background-size: 150px 280px;
             border: solid red 1px;
-            background-image: url("img/project-menu-bg.svg");
-            background: no-repeat;
+            padding: 0;
+        }
+
+
+        .nav-deco {
+            display: block;
+            height: 60px;
+            width: 60px;
+            margin: 2px auto 10px;
+        }
+
+        .live-text {
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .chain-link {
+            width: 25px;
+            height: 25px;
+            transform: translate(-4px, -8px) rotate(46deg);
+
         }
     </style>
 </head>
@@ -2410,22 +2433,21 @@
         </nav>
     </header>
     <main>
+        <!-- HOME-->
         <section id="home">
             <div id="inner-home">
+                <!--BACKGROUND-IMAGE-->
                 <div class="home-bg-top">
                     <svg id="home-bg" height="350" width="250">
                         <use href="#giltter"></use>
                         <use href="#bg-home-bars"></use>
                     </svg>
                 </div>
-
-
-
-
+                <!--PROFILE PIC-->
                 <div class="sam-img-container">
                     <img src="img/profile-pic-home.webp" alt="Image of Sam">
                 </div>
-
+                <!--MY NAME-->
                 <div class="full-name">
                     <ul class="my-names">
                         <li><img src="img/sam-name-colour.svg" alt="image of sam the name"></li>
@@ -2438,10 +2460,11 @@
                         <li><img src="img/modeste-name-gold.svg" alt="image of modeste the name"></li>
                     </ul>
                 </div>
-
-                <div class="role">
+                <!--MY ROLE-->
+                <div class="dev-text">
                     <h1>Creative Web Developer</h1>
                 </div>
+                <!--BACKGROUND-IMAGE-->
                 <div class="bg-bottom">
                     <svg height="350" width="250" transform="rotate(180)">
                         <use href="#home-bg"></use>
@@ -2449,33 +2472,36 @@
                 </div>
             </div>
         </section>
+        <!--PORTFOLIO SECTION-->
         <section id="portfolio">
             <div id="inner-portfolio">
+                <!--BACKGROUND-IMAGE-PORTFOLIO-->
                 <div class="portfolio-bg">
                     <svg id="portfolio-bg" height="200" width="250">
                         <use href="#glitter-port-bg"></use>
                         <use href="#port-contact-bars"></use>
                     </svg>
                 </div>
-                <h2>Portfolio</h2>
-                <ul>
-                    <li>Static</li>
-                    <li>Interactive</li>
-                    <li>Logos</li>
-                </ul>
-
+                <header>
+                    <h2>Portfolio</h2>
+                    <ul>
+                        <li>Static</li>
+                        <li>Interactive</li>
+                        <li>Logos</li>
+                    </ul>
+                </header>
                 <div class="project-container">
                     <div class="project-slider">
+                        <!--PROJECT-2-->
                         <article class="project-container proj-2">
                             <aside class="proj-nav">
-                                <ul>
-                                    <li><img src="img/gitHub.svg" alt="gitHub icon"></li>
-                                    <li><img src="img/browser-win.svg" alt="browser-window-icon"></li>
-                                </ul>
-
-
+                                <h3 class="live-text">Live Links</h3>
+                                <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
+                                <a href="" target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
+                                        alt="gitHub icon"></a>
+                                <a href="" target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
+                                        alt="browser-window-icon"></a>
                             </aside>
-
                         </article>
                     </div>
 
