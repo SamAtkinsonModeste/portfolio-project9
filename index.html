@@ -38,6 +38,10 @@
             color: #d4af37;
         }
 
+        img {
+            width: 100%;
+        }
+
         nav {
             display: flex;
         }
@@ -68,33 +72,96 @@
         }
 
         .proj-nav {
-            width: 150px;
-            height: 280px;
-            background: url("img/project-menu-bg.svg");
-            background-repeat: no-repeat;
-            background-size: 150px 280px;
+            width: 90px;
+            /* height: 280px; */
+            background-size: 90px 200px;
             border: solid red 1px;
             padding: 0;
+            margin-right: 2px;
         }
 
 
         .nav-deco {
             display: block;
-            height: 60px;
-            width: 60px;
-            margin: 2px auto 10px;
+            height: 50px;
+            width: 50px;
+            margin: 1px auto 1px;
         }
 
         .live-text {
             text-align: center;
             margin-bottom: 0;
+            transform: translateY(-230px);
+
         }
 
         .chain-link {
             width: 25px;
             height: 25px;
-            transform: translate(-4px, -8px) rotate(46deg);
+            transform: translateY(-228px);
 
+        }
+
+        .git,
+        .browser {
+            transform: translateY(-230px);
+        }
+
+        .project-container {
+            border: solid 1px #d4af37;
+            width: 315px;
+            margin: 0 auto;
+        }
+
+        .projetc-img-links {
+            display: flex;
+            border: solid 1px #e85810;
+            width: 300px;
+            height: 279px;
+            margin: 0 auto;
+        }
+
+
+
+        .proj-img {
+            position: relative;
+            width: 135px;
+            margin-right: auto;
+            margin-left: 40px;
+        }
+
+        .colour-img {
+            position: absolute;
+            left: 0;
+            opacity: 0;
+        }
+
+        .project-info img {
+            width: 60px;
+            margin: 0 5px;
+            box-shadow: 0px 0.1rem 4px #f2e9cb;
+            border-radius: 6px;
+
+        }
+
+        .made-with {
+            display: flex;
+        }
+
+        .info-head,
+        .created-with {
+            color: #cec6c6;
+
+        }
+
+        .info-head {
+
+            text-align: center;
+        }
+
+        .created-with {
+            width: 88px;
+            margin-left: 5px;
         }
     </style>
 </head>
@@ -2494,15 +2561,55 @@
                     <div class="project-slider">
                         <!--PROJECT-2-->
                         <article class="project-container proj-2">
-                            <aside class="proj-nav">
-                                <h3 class="live-text">Live Links</h3>
-                                <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
-                                <a href="" target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
-                                        alt="gitHub icon"></a>
-                                <a href="" target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
-                                        alt="browser-window-icon"></a>
-                            </aside>
+
+                            <div class="projetc-img-links">
+                                <div class="proj-img">
+                                    <img src="img/p2-b-w.webp">
+                                    <img class="colour-img" src="img/p2-colour.webp">
+                                </div>
+
+                                <aside class="proj-nav">
+                                    <img class="aside-bg" src="img/project-menu-bg.svg">
+                                    <h3 class="live-text">Live Links</h3>
+                                    <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
+                                    <a href="" target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
+                                            alt="gitHub icon"></a>
+                                    <a href="" target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
+                                            alt="browser-window-icon"></a>
+                                </aside>
+                            </div>
+                            <div class="project-info">
+                                <p class="info-head p2">Simple on page portfolio</p>
+                                <div class="made-with">
+                                    <p class="created-with">Created with:</p>
+                                    <img src="img/html-made-with.svg" alt="html-icon">
+                                    <img src="img/css-made-with.svg" alt="css-icon">
+                                    <img src="img/ps-made-with.svg" alt="photoshop-icon">
+                                </div>
+                            </div>
                         </article>
+                        <div class="proj-slider-nav">
+                            <span class="left-arrow bloc"></span>
+                            <span class="divider bloc"></span>
+                            <span class="right-arrow"></span>
+                            <ul class="static">
+                                <li><span class="nav-ball bloc"></span></li>
+                                <li><span class="nav-ball bloc"></span></li>
+                                <li><span class="nav-ball bloc"></span></li>
+                            </ul>
+                            <ul class="interactive">
+                                <li><span class="nav-ball bloc"></span></li>
+                                <li><span class="nav-ball bloc"></span></li>
+                                <li><span class="nav-ball bloc"></span></li>
+                                <li><span class="nav-ball bloc"></span></li>
+                            </ul>
+
+                            <ul class="logos">
+                                <li><span class="nav-ball bloc"></span></li>
+                                <li><span class="nav-ball bloc"></span></li>
+                                <li><span class="nav-ball bloc"></span></li>
+                            </ul>
+                        </div>
                     </div>
 
                 </div>
