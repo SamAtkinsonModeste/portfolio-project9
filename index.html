@@ -22,6 +22,7 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/apc2mhs.css">
+
     <title>SAM - Portfolio</title>
     <style>
         body {
@@ -32,11 +33,27 @@
         h1,
         h2,
         h3 {
-            font-family: boucherie-block, sans-serif;
+            font-family: "boucherie-block", sans-serif;
             font-weight: 400;
             font-style: normal;
             color: #d4af37;
         }
+
+        p {
+            font-family: "futura-pt", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .dance-web {
+            font-family: finalsix, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #d4af37;
+
+        }
+
+
 
         img {
             width: 100%;
@@ -149,7 +166,8 @@
         }
 
         .info-head,
-        .created-with {
+        .created-with,
+        .logo-text {
             color: #cec6c6;
 
         }
@@ -162,6 +180,10 @@
         .created-with {
             width: 88px;
             margin-left: 5px;
+        }
+
+        .logo-img {
+            background: #fff;
         }
     </style>
 </head>
@@ -1664,7 +1686,41 @@
         </symbol>
     </svg>
 
+    <!--Arrow for Nav-->
+    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="enable-background:new 0 0 76.3 41">
+        <symbol id="arrow" viewBox="0 0 76.3 41">
+            <linearGradient id="a" x1="38.131" x2="38.131" y1="40.27" y2=".74" gradientUnits="userSpaceOnUse">
+                <stop offset="0" style="stop-color:#a47a1e" />
+                <stop offset=".23" style="stop-color:#d3a84c" />
+                <stop offset=".43" style="stop-color:#ffec94" />
+                <stop offset=".57" style="stop-color:#e6be69" />
+                <stop offset=".77" style="stop-color:#ffd87c" />
+                <stop offset=".95" style="stop-color:#b58f3e" />
+                <stop offset="1" style="stop-color:#956d13" />
+            </linearGradient>
+            <path
+                d="M75 21.6 42 40.1c-.9.5-2-.1-2-1.1v-2.6c0-.5.3-.9.7-1.1l20-11.2H3C1.7 24.1.6 23 .6 21.7v-2.2C.6 18.1 1.7 17 3 17h57.7l-20-11.2c-.4-.3-.7-.7-.7-1.2V2C40 1 41.1.4 41.9.9l33 18.5c1 .5 1 1.7.1 2.2z"
+                style="fill:url(#a)" />
+        </symbol>
+    </svg>
 
+    <!--Nav Bars-->
+    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="enable-background:new 0 0 11.4 68">
+        <symbol id="nav-bars" viewBox="0 0 11.4 68">
+            <linearGradient id="a" x1="-147.189" x2="-82.189" y1="-94.995" y2="-94.995"
+                gradientTransform="rotate(-90 10.015 -90.692)" gradientUnits="userSpaceOnUse">
+                <stop offset="0" style="stop-color:#a47a1e" />
+                <stop offset=".23" style="stop-color:#d3a84c" />
+                <stop offset=".43" style="stop-color:#ffec94" />
+                <stop offset=".57" style="stop-color:#e6be69" />
+                <stop offset=".77" style="stop-color:#ffd87c" />
+                <stop offset=".95" style="stop-color:#b58f3e" />
+                <stop offset="1" style="stop-color:#956d13" />
+                <stop offset="1" style="stop-color:#1d1d1b" />
+            </linearGradient>
+            <path d="M10.7 6.5v55c0 2.8-2.2 5-5 5s-5-2.2-5-5v-55c0-2.8 2.2-5 5-5s5 2.3 5 5z" style="fill:url(#a)" />
+        </symbol>
+    </svg>
 
     <!-- OVERLAY -->
     <div id="overlay">
@@ -2560,22 +2616,23 @@
                 <div class="project-container">
                     <div class="project-slider">
                         <!--PROJECT-2-->
-                        <article class="project-container proj-2">
-
+                        <article class="project-container proj-2" id="proj-2">
                             <div class="projetc-img-links">
                                 <div class="proj-img">
                                     <img src="img/p2-b-w.webp">
                                     <img class="colour-img" src="img/p2-colour.webp">
                                 </div>
-
+                                <hr class="proj-divider">
                                 <aside class="proj-nav">
                                     <img class="aside-bg" src="img/project-menu-bg.svg">
                                     <h3 class="live-text">Live Links</h3>
                                     <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
-                                    <a href="" target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
-                                            alt="gitHub icon"></a>
-                                    <a href="" target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
+                                    <a href="https://samatkinsonmodeste.github.io/project-2-treehouse-FEWDtechdegree/"
+                                        target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
                                             alt="browser-window-icon"></a>
+                                    <a href="https://github.com/SamAtkinsonModeste/project-2-treehouse-FEWDtechdegree"
+                                        target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
+                                            alt="gitHub icon"></a>
                                 </aside>
                             </div>
                             <div class="project-info">
@@ -2588,31 +2645,273 @@
                                 </div>
                             </div>
                         </article>
-                        <div class="proj-slider-nav">
-                            <span class="left-arrow bloc"></span>
-                            <span class="divider bloc"></span>
-                            <span class="right-arrow"></span>
-                            <ul class="static">
-                                <li><span class="nav-ball bloc"></span></li>
-                                <li><span class="nav-ball bloc"></span></li>
-                                <li><span class="nav-ball bloc"></span></li>
-                            </ul>
-                            <ul class="interactive">
-                                <li><span class="nav-ball bloc"></span></li>
-                                <li><span class="nav-ball bloc"></span></li>
-                                <li><span class="nav-ball bloc"></span></li>
-                                <li><span class="nav-ball bloc"></span></li>
-                            </ul>
+                        <!--PROJECT-3-->
+                        <article class="project-container proj-3" id="proj-3">
+                            <div class="projetc-img-links">
+                                <div class="proj-img">
+                                    <img src="img/p3-b-w.webp">
+                                    <img class="colour-img" src="img/p3-colour.webp">
+                                </div>
+                                <hr class="proj-divider">
+                                <aside class="proj-nav">
+                                    <img class="aside-bg" src="img/project-menu-bg.svg">
+                                    <h3 class="live-text">Live Links</h3>
+                                    <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
+                                    <a href="https://samatkinsonmodeste.github.io/TreeHouse_Project_3_OnlineForm/"
+                                        target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
+                                            alt="browser-window-icon"></a>
+                                    <a href="https://github.com/SamAtkinsonModeste/TreeHouse_Project_3_OnlineForm"
+                                        target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
+                                            alt="gitHub icon"></a>
+                                </aside>
+                            </div>
+                            <div class="project-info">
+                                <p class="info-head p3">A web form for a newsletter about code</p>
+                                <div class="made-with">
+                                    <p class="created-with">Created with:</p>
+                                    <img src="img/html-made-with.svg" alt="html-icon">
+                                    <img src="img/css-made-with.svg" alt="css-icon">
+                                </div>
+                            </div>
+                        </article>
+                        <!--PROJECT-4-->
+                        <article class="project-container proj-4" id="proj-4">
+                            <div class="projetc-img-links">
+                                <div class="proj-img">
+                                    <img src="img/p4-b-w.webp">
+                                    <img class="colour-img" src="img/p4-colour.webp">
+                                </div>
+                                <hr class="proj-divider">
+                                <aside class="proj-nav">
+                                    <img class="aside-bg" src="img/project-menu-bg.svg">
+                                    <h3 class="live-text">Live Links</h3>
+                                    <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
+                                    <a href="https://samatkinsonmodeste.github.io/Treehouse-Project-4-SASS/"
+                                        target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
+                                            alt="browser-window-icon"></a>
+                                    <a href="https://github.com/SamAtkinsonModeste/Treehouse-Project-4-SASS"
+                                        target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
+                                            alt="gitHub icon"></a>
+                                </aside>
+                            </div>
+                            <div class="project-info">
+                                <p class="info-head p4">A UI for web pages</p>
+                                <div class="made-with">
+                                    <p class="created-with">Created with:</p>
+                                    <img src="img/html-made-with.svg" alt="html-icon">
+                                    <img src="img/sass-made-with.svg" alt="sass-icon">
+                                </div>
+                            </div>
+                        </article>
+                        <!--PROJECT-5-->
+                        <article class="project-container proj-5" id="proj-5">
+                            <div class="projetc-img-links">
+                                <div class="proj-img">
+                                    <img src="img/p5-b-w.webp">
+                                    <img class="colour-img" src="img/p5-colour.webp">
+                                </div>
+                                <hr class="proj-divider">
+                                <aside class="proj-nav">
+                                    <img class="aside-bg" src="img/project-menu-bg.svg">
+                                    <h3 class="live-text">Live Links</h3>
+                                    <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
+                                    <a href="https://samatkinsonmodeste.github.io/treehouse-project-5-interactive-photo-gallery/"
+                                        target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
+                                            alt="browser-window-icon"></a>
+                                    <a href="https://github.com/SamAtkinsonModeste/treehouse-project-5-interactive-photo-gallery"
+                                        target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
+                                            alt="gitHub icon"></a>
+                                </aside>
+                            </div>
+                            <div class="project-info">
+                                <p class="info-head p5">A photo gallery with search functionality</p>
+                                <div class="made-with">
+                                    <p class="created-with">Created with:</p>
+                                    <img src="img/html-made-with.svg" alt="html-icon">
+                                    <img src="img/css-made-with.svg" alt="css-icon">
+                                    <img src="img/js-made-with.svg" alt="javascript-icon">
+                                </div>
+                            </div>
+                        </article>
+                        <!--PROJECT-6-->
+                        <article class="project-container proj-6" id="proj-6">
+                            <div class="projetc-img-links">
+                                <div class="proj-img">
+                                    <img src="img/p6-b-w.webp">
+                                    <img class="colour-img" src="img/p6-colour.webp">
+                                </div>
+                                <hr class="proj-divider">
+                                <aside class="proj-nav">
+                                    <img class="aside-bg" src="img/project-menu-bg.svg">
+                                    <h3 class="live-text">Live Links</h3>
+                                    <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
+                                    <a href="https://samatkinsonmodeste.github.io/Project-6-HP-Game/"
+                                        target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
+                                            alt="browser-window-icon"></a>
+                                    <a href="https://github.com/SamAtkinsonModeste/Project-6-HP-Game"
+                                        target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
+                                            alt="gitHub icon"></a>
+                                </aside>
+                            </div>
+                            <div class="project-info">
+                                <p class="info-head p6">A Harry Potter word game</p>
+                                <div class="made-with">
+                                    <p class="created-with">Created with:</p>
+                                    <img src="img/ps-made-with.svg" alt="photoshop-icon">
+                                    <img src="img/html-made-with.svg" alt="html-icon">
+                                    <img src="img/css-made-with.svg" alt="css-icon">
+                                    <img src="img/js-made-with.svg" alt="javascript-icon">
 
-                            <ul class="logos">
-                                <li><span class="nav-ball bloc"></span></li>
-                                <li><span class="nav-ball bloc"></span></li>
-                                <li><span class="nav-ball bloc"></span></li>
-                            </ul>
-                        </div>
+                                </div>
+                            </div>
+                        </article>
+                        <!--PROJECT-7-->
+                        <article class="project-container proj-7" id="proj-7">
+                            <div class="projetc-img-links">
+                                <div class="proj-img">
+                                    <img src="img/p7-b-w.webp">
+                                    <img class="colour-img" src="img/p7-colour.webp">
+                                </div>
+                                <hr class="proj-divider">
+                                <aside class="proj-nav">
+                                    <img class="aside-bg" src="img/project-menu-bg.svg">
+                                    <h3 class="live-text">Live Links</h3>
+                                    <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
+                                    <a href="https://samatkinsonmodeste.github.io/Treehouse-Project-7-Dashboard/"
+                                        target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
+                                            alt="browser-window-icon"></a>
+                                    <a href="https://github.com/SamAtkinsonModeste/Treehouse-Project-7-Dashboard"
+                                        target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
+                                            alt="gitHub icon"></a>
+                                </aside>
+                            </div>
+                            <div class="project-info">
+                                <p class="info-head p7">A Dashboard that tracks user social media activity</p>
+                                <div class="made-with">
+                                    <p class="created-with">Created with:</p>
+                                    <img src="img/ps-made-with.svg" alt="photoshop-icon">
+                                    <img src="img/html-made-with.svg" alt="html-icon">
+                                    <img src="img/css-made-with.svg" alt="css-icon">
+                                    <img src="img/js-made-with.svg" alt="javascript-icon">
+
+                                </div>
+                            </div>
+                        </article>
+                        <!--PROJECT-8-->
+                        <article class="project-container proj-8" id="proj-8">
+                            <div class="projetc-img-links">
+                                <div class="proj-img">
+                                    <img src="img/p8-b-w.webp">
+                                    <img class="colour-img" src="img/p8-colour.webp">
+                                </div>
+                                <hr class="proj-divider">
+                                <aside class="proj-nav">
+                                    <img class="aside-bg" src="img/project-menu-bg.svg">
+                                    <h3 class="live-text">Live Links</h3>
+                                    <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
+                                    <a href="https://samatkinsonmodeste.github.io/Project-8-API-Employee-Directory/"
+                                        target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
+                                            alt="browser-window-icon"></a>
+                                    <a href="https://github.com/SamAtkinsonModeste/Project-8-API-Employee-Directory"
+                                        target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
+                                            alt="gitHub icon"></a>
+                                </aside>
+                            </div>
+                            <div class="project-info">
+                                <p class="info-head p8">Using an API for an employee directory for employees to share
+                                    contact information</p>
+                                <div class="made-with">
+                                    <p class="created-with">Created with:</p>
+                                    <img src="img/html-made-with.svg" alt="html-icon">
+                                    <img src="img/css-made-with.svg" alt="css-icon">
+                                    <img src="img/js-made-with.svg" alt="javascript-icon">
+
+                                </div>
+                            </div>
+                        </article>
+                        <!--LOGO-RTB-->
+                        <article class="logo-container logo-rtb" id="logo-rtb">
+                            <div class="logo-img">
+                                <img src="img/rtb-logo.webp">
+                            </div>
+                            <div class="logo-info">
+                                <h2 class="logo-head rtb-logo">Raising The Barre</h2>
+                                <div class="logo-info">
+                                    <p class="logo-text">This logo was created for a musical theatre workshop.<br />
+                                        The centre character is a nod to Bob Fosse.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <!--LOGO-S74-->
+                        <article class="logo-container logo-S74" id="logo-S74">
+                            <div class="logo-img">
+                                <img src="img/s74-logo.webp">
+                            </div>
+                            <div class="logo-info">
+                                <h2 class="logo-head s74-logo">S74 Productions</h2>
+                                <div class="logo-info">
+                                    <p class="logo-text">A dance school wanted a similar logo,<br />
+                                        but more sophisticated for their production company.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <!--LOGO-YOGA-->
+                        <article class="logo-container logo-way" id="logo-way">
+                            <div class="logo-img">
+                                <img src="img/yoga-logo.webp">
+                            </div>
+                            <div class="logo-info">
+                                <h2 class="logo-head way-logo">Denyce Way</h2>
+                                <div class="logo-info">
+                                    <p class="logo-text">Denyce wanted an organic logo for her yoga classes.</p>
+                                </div>
+                            </div>
+                        </article>
+
+
+
+
                     </div>
+                    <!--nav for portfolio slider-->
+                    <div class="proj-slider-nav">
+                        <span class="left-arrow bloc">
+                            <svg width="75" height="50">
+                                <use href="#arrow"></use>
+                            </svg>
+                        </span>
+                        <span class="divider bloc">
+                            <svg width="20" height="50">
+                                <use href="#nav-bars"></use>
+                            </svg>
+                        </span>
+                        <span class="right-arrow"> <svg width="75" height="50">
+                                <use href="#arrow"></use>
+                            </svg></span>
+                        <ul class="static">
+                            <li><span class="nav-ball bloc" title="Simple One Page Portfolio"></span></li>
+                            <li><span class="nav-ball bloc" title="Web Form"></span></li>
+                            <li><span class="nav-ball bloc" title="A Web UI Kit"></span></li>
+                        </ul>
+                        <ul class="interactive">
+                            <li><span class="nav-ball bloc" title="Interactive Photo Gallery"></span></li>
+                            <li><span class="nav-ball bloc" title="Harry Potter Word Game"></span></li>
+                            <li><span class="nav-ball bloc" title="Social Media Dashboard"></span></li>
+                            <li><span class="nav-ball bloc" title="Empolyee Directory"></span></li>
+                        </ul>
 
+                        <ul class="logos">
+                            <li><span class="nav-ball bloc" title="Raising The Bar Logo"></span></li>
+                            <li><span class="nav-ball bloc" title="S74 Logo"></span></li>
+                            <li><span class="nav-ball bloc" title="Yoga Logo"></span></li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <!--ABOUT ME-->
+        <section id="about-me">
+            <div id="inner-about-me">
+
             </div>
         </section>
     </main>
