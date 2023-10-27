@@ -84,6 +84,9 @@
             height: 350px;
         }
 
+        /******************************************
+SVG WIDTHS AND HEIGHTS
+*******************************************/
         #home-bg {
             height: 350px;
             width: 250px;
@@ -107,9 +110,16 @@
         }
 
 
+        #arrow-right,
+        #arrow-left {
+            width: 75px;
+            height: 50px;
+        }
 
-
-
+        #divider {
+            width: 20px;
+            height: 50px;
+        }
 
         #ori-home-bg,
         #port-contact-bars-bg,
@@ -120,6 +130,11 @@
             width: 1px;
             height: 1px;
         }
+
+
+        /******************************************
+SVG WIDTHS AND HEIGHTS END
+*******************************************/
 
         .proj-nav {
             width: 90px;
@@ -253,7 +268,7 @@
 
     <!--SVG CODE-->
     <!--HOME BARS BG-->
-    <svg id="ori-home-bg" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+    <svg id="ori-home-bg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
         style="enable-background:new 0 0 221.3 279">
         <symbol id="bg-home-bars" viewBox="0 0 221.3 279">
             <g id="home-bars-bg">
@@ -604,7 +619,8 @@
         </symbol>
     </svg>
     <!--Glitter-->
-    <svg id="ori-glitter-home" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="display:none;">
+    <svg id="ori-glitter-home" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+        style="display:none;">
         <style>
             .st0 {
                 fill: #413216
@@ -1167,8 +1183,8 @@
     <!--Glitter Portfoli-contact-->
 
 
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        style="display:none" xml:space="preserve">
+    <svg version="1.1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px" y="0px" style="display:none" xml:space="preserve">
         <style type="text/css">
             .st0 {
                 fill: #3E2F16;
@@ -1552,7 +1568,7 @@
 
 
     <!--Portfolio-contact bars-->
-    <svg id="port-contact-bars-bg" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+    <svg id="port-contact-bars-bg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
         style="enable-background:new 0 0 256.3 150">
         <symbol id="port-contact-bars" viewBox="0 0 256.3 150">
             <g class="hori-port">
@@ -1785,7 +1801,7 @@
     </svg>
 
     <!--About-bg-->
-    <svg id="glitter-about" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" x="0" y="0"
+    <svg id="glitter-about" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" x="0" y="0"
         style="enable-background:new 0 0 160 165" version="1.1">
         <style>
             .st0 {
@@ -2029,7 +2045,7 @@
                 class="st3" />
         </symbol>
     </svg>
-    <svg id="about-svg" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+    <svg id="about-svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
         style="enable-background:new 0 0 160 165">
         <symbol id="about-bars" viewBox="0 0 160 165">
             <g class="hori-about">
@@ -2436,8 +2452,8 @@
     <div id="overlay">
         <!--LOGO ANIMATION CONTAINER-->
         <div id="logo-animation">
-            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="enable-background:new 0 0 812.4 514.4"
-                viewBox="0 0 812.4 514.4">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" xml:space="preserve"
+                style="enable-background:new 0 0 812.4 514.4" viewBox="0 0 812.4 514.4">
                 <g class="a-right">
                     <linearGradient id="SVGID_27_" x1="7.479" x2="23.889" y1="498.282" y2="498.282"
                         gradientUnits="userSpaceOnUse">
@@ -3271,7 +3287,7 @@
             <div id="inner-home">
                 <!--BACKGROUND-IMAGE-->
                 <div class="home-bg-top">
-                    <svg id="home-bg">
+                    <svg id="home-bg" aria-hidden="true">
                         <use href="#giltter"></use>
                         <use href="#bg-home-bars"></use>
                     </svg>
@@ -3299,7 +3315,7 @@
                 </div>
                 <!--BACKGROUND-IMAGE-->
                 <div class="bg-bottom">
-                    <svg id="home-bottom">
+                    <svg id="home-bottom" aria-hidden="true">
                         <use href="#home-bg"></use>
                     </svg>
                 </div>
@@ -3310,7 +3326,7 @@
             <div id="inner-portfolio">
                 <!--BACKGROUND-IMAGE-PORTFOLIO-->
                 <div class="portfolio-bg">
-                    <svg id="portfolio-bg">
+                    <svg id="portfolio-bg" aria-hidden="true">
                         <use href="#glitter-port-bg"></use>
                         <use href="#port-contact-bars"></use>
                     </svg>
@@ -3586,18 +3602,24 @@
                     <!--nav for portfolio slider-->
                     <div class="proj-slider-nav">
                         <span class="left-arrow bloc">
-                            <svg width="75" height="50">
+                            <svg id="arrow-left" aria-labelledby="left-arrow">
+                                <title id="left-arrow">right arrow nav</title>
                                 <use href="#arrow"></use>
                             </svg>
                         </span>
                         <span class="divider bloc">
-                            <svg width="20" height="50">
+                            <svg id="divider" aria-hidden="true">
                                 <use href="#nav-bars"></use>
                             </svg>
                         </span>
-                        <span class="right-arrow"> <svg width="75" height="50">
+                        <span class="right-arrow bloc">
+
+                            <svg id="arrow-right" aria-labelledby="right-arrow">
+                                <title id="right-arrow">right arrow nav</title>
                                 <use href="#arrow"></use>
-                            </svg></span>
+                            </svg>
+
+                        </span>
                         <ul class="static">
                             <li><span class="nav-ball bloc" title="Simple One Page Portfolio"></span></li>
                             <li><span class="nav-ball bloc" title="Web Form"></span></li>
@@ -3623,7 +3645,7 @@
         <section id="about-me">
             <div id="inner-about-me">
                 <div class="about-bg">
-                    <svg id="about-bg">
+                    <svg id="about-bg" aria-hidden="true">
                         <use href="#about-glitter"></use>
                         <use href="#about-bars"></use>
                     </svg>
@@ -3679,7 +3701,7 @@
         <!--CONTACT ME-->
         <section id="contact-me">
             <div class="contact-bg">
-                <svg id="contact-bg">
+                <svg id="contact-bg" aria-hidden="true">
                     <use href="#glitter-port-bg"></use>
                     <use href="#port-contact-bars"></use>
                 </svg>
@@ -3697,20 +3719,20 @@
 
                 </form>
             </div>
-            <footer>
-                <div class="contact-links">
-                    <p class="gitHub-foot">
-                        <a href="https://github.com/SamAtkinsonModeste"><img src="img/gitHub.svg" alt="gitHub logo"></a>
-                    </p>
-                    <p class="linkedIn-foot">
-                        <a href="www.linkedin.com/in/sam-atkinson-modeste"><img src="img/linkedIn.svg"
-                                alt="LinkedIn logo"></a>
-                    </p>
-                </div>
-                <small><span class="copy">&#169;</span> samantha atkinson modeste 2023</small>
-            </footer>
+
         </section>
     </main>
+    <footer>
+        <div class="contact-links">
+            <p class="gitHub-foot">
+                <a href="https://github.com/SamAtkinsonModeste"><img src="img/gitHub.svg" alt="gitHub logo"></a>
+            </p>
+            <p class="linkedIn-foot">
+                <a href="www.linkedin.com/in/sam-atkinson-modeste"><img src="img/linkedIn.svg" alt="LinkedIn logo"></a>
+            </p>
+        </div>
+        <small><span class="copy">&#169;</span> samantha atkinson modeste 2023</small>
+    </footer>
 </body>
 
 </html>
