@@ -1,0 +1,42 @@
+@use '../utilites/variables' as *;
+
+#ori-home-bg,
+#port-contact-bars-bg,
+#arrow-svg,
+#nav-svg,
+#glitter-about,
+#about-svg {
+    width: 1px;
+    height: 1px;
+    margin: -10px;
+}
+
+
+body,
+#overlay {
+    background: $black;
+}
+
+#overlay {
+    width: 100vw;
+    height: 100vh;
+}
+
+#overlay,
+#logo-animation {
+    display: none;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+
+}

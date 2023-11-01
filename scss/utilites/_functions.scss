@@ -1,0 +1,9 @@
+// ==========================================================================
+// Functions
+// ==========================================================================
+
+
+//Function to get em values from pixel arguments
+@function em($target, $context: $base__font-size) {
+	@return ($target / $context) * 1em;
+}

@@ -1,0 +1,86 @@
+// ==========================================================================
+// Variables
+//==========================================================================
+
+// FONTS
+$font-family--primary : 'boucherie-block',
+'cursive';
+$font-family--secondary : 'finalsix',
+'sans-serif';
+$font-family--parag: 'futura-pt', 'sans-serif';
+
+
+// FONT WEIGHTS
+$font-weight--regular : 400;
+$font-weight--medium : 500;
+$font-weight--bold : 700;
+
+
+
+//COLORS
+$black : #000000; //rad grad 3
+$grey : #2B2B2B;
+$emperor-bg-proj: #545454; //grad-for-project-container 
+$gold : #D4AF37;
+$silver-rust: #CEC6C6; //my white
+$gold-grad-1: #E6BE69;
+$gold-grad-2: #D4AF37;
+$gold-grad-3 :#FFEC94;
+$gold-grad-4 :#E6BE69;
+$gold-grad-5 : #FFD87C;
+$gold-grad-6 : #FFD87C;
+$gold-grad-7 : #956D13;
+$rad-grad-1 : #8F1E0A;
+$rad-grad-2 : #5A0909;
+$red : #ff0000; //text-shadow-60%
+
+
+// BUTTON Colours
+
+
+
+
+
+
+
+
+
+
+//TEXT
+
+$base__font-size : 16px;
+$base__line : 24px;
+$letter-spacing : 1px;
+
+//ASSET PATHS
+$path-img : '../img';
+
+
+
+//BORDER RADIUS
+$br-rad : 0.25em;
+$br-rad-lg : 0.750em;
+
+
+
+
+
+
+
+//Breakpoints
+$brkpoint-sm :411px;
+$brkpoint-md :768px;
+$brkpoint-lg :1024px;
+$brkpoint-xlg :1400px;
+$brkpoint-xxlg :1800px;
+
+
+//Breakpoint Map
+
+$breakpoints: (
+  sm : $brkpoint-sm,
+  med : $brkpoint-md,
+  lg : $brkpoint-lg,
+  x-lg : $brkpoint-xlg,
+
+  )
