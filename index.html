@@ -24,11 +24,11 @@
     <link rel="stylesheet" href="https://use.typekit.net/apc2mhs.css">
     <link rel="stylesheet" href="css/styles.css">
 
-    <title>SAM - Portfolio</title>
+    <title>Portfolio</title>
 
 </head>
 
-<body>
+<body id="grid-container">
 
     <!--SVG CODE-->
     <!--HOME BARS BG-->
@@ -3016,34 +3016,40 @@
             </svg>
         </div>
     </div>
-    <div class="grid-container">
-        <header>
-            <!-- NAV -->
-            <nav>
+    <header class="main-header">
+        <div class="sam-logo">
+            <img class="logo" src="img/sam-logo.svg" alt="sam's logo">
+        </div>
 
-                <div class="sam-logo">
-                    <img src="img/sam-logo.svg" alt="sam's logo">
-                </div>
-                <div class="hamburger">
-                    <span class="ham-1"></span>
-                    <span class="ham-2"></span>
-                    <span class="ham-3"></span>
-                </div>
-                <div class="nav-ul">
-                    <ul class="main-nav">
-                        <li>Home</li>
-                        <li>Portfolio</li>
-                        <li>logo</li>
-                        <li>About Me</li>
-                        <li>Contact Me</li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <!-- HOME-->
-            <section id="home">
-                <div id="inner-home">
+        <div class="hamburger">
+            <span class="ham-1 burger"></span>
+            <span class="ham-2 burger"></span>
+            <span class="ham-3 burger"></span>
+        </div>
+
+        <!-- NAV -->
+        <nav id="nav-main">
+            <div class="nav-ul">
+                <ul class="main-nav">
+                    <li>Home</li>
+                    <li>Portfolio</li>
+                    <li class="logo-sam">logo</li>
+                    <li>About Me</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+
+
+
+        </nav>
+
+    </header>
+    <main>
+        <!-- HOME-->
+        <section id="home">
+            <div id="inner-home">
+                <!--TOP OF HOME SECTION-->
+                <div class="top-home">
                     <!--BACKGROUND-IMAGE-->
                     <div class="home-bg-top">
                         <svg id="home-bg" aria-hidden="true">
@@ -3055,22 +3061,28 @@
                     <div class="sam-img-container">
                         <img src="img/profile-pic-home.webp" alt="Image of Sam">
                     </div>
-                    <!--MY NAME-->
-                    <div class="full-name">
-                        <ul class="my-names">
-                            <li><img src="img/sam-name-colour.svg" alt="image of sam the name"></li>
-                            <li><img src="img/atkinson-name-colour.svg" alt="image of atkinson the name"></li>
-                            <li><img src="img/modeste-name-colour.svg" alt="image of modeste the name"></li>
-                        </ul>
-                        <ul class="my-names">
-                            <li><img src="img/sam-name-gold.svg" alt="image of sam the name"></li>
-                            <li><img src="img/atkinson-name-gold.svg" alt="image of atkinson the name"></li>
-                            <li><img src="img/modeste-name-gold.svg" alt="image of modeste the name"></li>
-                        </ul>
-                    </div>
-                    <!--MY ROLE-->
+                </div>
+                <!--MY NAME-->
+                <div class="full-name">
+                    <ul class="my-names nam-colour">
+                        <li class="sam-colour"><img src="img/sam-name-colour.svg" alt="image of sam the name"></li>
+                        <li class="atkin-colour"><img src="img/atkinson-name-colour.svg"
+                                alt="image of atkinson the name"></li>
+                        <li class="mod-colour"><img src="img/modeste-name-colour.svg" alt="image of modeste the name">
+                        </li>
+                    </ul>
+                    <ul class="my-names nam-gold">
+                        <li class="sam-gold"><img src="img/sam-name-gold.svg" alt="image of sam the name"></li>
+                        <li class="atkin-gold"><img src="img/atkinson-name-gold.svg" alt="image of atkinson the name">
+                        </li>
+                        <li class="mod-gold"><img src="img/modeste-name-gold.svg" alt="image of modeste the name">
+                        </li>
+                    </ul>
+                </div>
+                <!--MY ROLE-->
+                <div class="role-and-bg">
                     <div class="dev-text">
-                        <h1>Creative Web Developer</h1>
+                        <h1 class="role-text">Creative Web Developer</h1>
                     </div>
                     <!--BACKGROUND-IMAGE-->
                     <div class="bg-bottom">
@@ -3079,425 +3091,423 @@
                         </svg>
                     </div>
                 </div>
-            </section>
-            <!--PORTFOLIO SECTION-->
-            <section id="portfolio">
-                <div id="inner-portfolio">
-                    <!--BACKGROUND-IMAGE-PORTFOLIO-->
-                    <div class="portfolio-bg">
-                        <svg id="portfolio-bg" aria-hidden="true">
-                            <use href="#glitter-port-bg"></use>
-                            <use href="#port-contact-bars"></use>
-                        </svg>
-                    </div>
-                    <header>
-                        <h2>Portfolio</h2>
-                        <ul>
-                            <li>Static</li>
-                            <li>Interactive</li>
-                            <li>Logos</li>
-                        </ul>
-                    </header>
-                    <!--Project container-->
-                    <div class="project-container">
-                        <div class="project-slider">
-                            <!--PROJECT-2-->
-                            <div class="project-container proj-2" id="proj-2">
-                                <div class="projetc-img-links">
-                                    <div class="proj-img">
-                                        <img class="black-img" src="img/p2-b-w.webp" alt="image of profolio page">
-                                        <img class="colour-img" src="img/p2-colour.webp" alt="image of profolio page">
-                                    </div>
-                                    <hr class="proj-divider">
-                                    <aside class="proj-nav">
-                                        <img class="aside-bg" src="img/project-menu-bg.svg" alt="ribbon">
-                                        <h3 class="live-text">Live Links</h3>
-                                        <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
-                                        <a href="https://samatkinsonmodeste.github.io/project-2-treehouse-FEWDtechdegree/"
-                                            target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
-                                                alt="browser-window-icon"></a>
-                                        <a href="https://github.com/SamAtkinsonModeste/project-2-treehouse-FEWDtechdegree"
-                                            target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
-                                                alt="gitHub icon"></a>
-                                    </aside>
-                                </div>
-                                <div class="project-info">
-                                    <p class="info-head p2">Simple one page portfolio</p>
-                                    <div class="made-with">
-                                        <p class="created-with">Created with:</p>
-                                        <img src="img/html-made-with.svg" alt="html-icon">
-                                        <img src="img/css-made-with.svg" alt="css-icon">
-                                        <img src="img/ps-made-with.svg" alt="photoshop-icon">
-                                    </div>
-                                </div>
-                            </div>
-                            <!--PROJECT-3-->
-                            <div class="project-container proj-3" id="proj-3">
-                                <div class="projetc-img-links">
-                                    <div class="proj-img">
-                                        <img class="black-img" src="img/p3-b-w.webp" alt="image of web form">
-                                        <img class="colour-img" src="img/p3-colour.webp" alt="image of web form">
-                                    </div>
-                                    <hr class="proj-divider">
-                                    <aside class="proj-nav">
-                                        <img class="aside-bg" src="img/project-menu-bg.svg" alt="ribbon">
-                                        <h3 class="live-text">Live Links</h3>
-                                        <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
-                                        <a href="https://samatkinsonmodeste.github.io/TreeHouse_Project_3_OnlineForm/"
-                                            target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
-                                                alt="browser-window-icon"></a>
-                                        <a href="https://github.com/SamAtkinsonModeste/TreeHouse_Project_3_OnlineForm"
-                                            target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
-                                                alt="gitHub icon"></a>
-                                    </aside>
-                                </div>
-                                <div class="project-info">
-                                    <p class="info-head p3">A web form for a newsletter about code</p>
-                                    <div class="made-with">
-                                        <p class="created-with">Created with:</p>
-                                        <img src="img/html-made-with.svg" alt="html-icon">
-                                        <img src="img/css-made-with.svg" alt="css-icon">
-                                    </div>
-                                </div>
-                            </div>
-                            <!--PROJECT-4-->
-                            <div class="project-container proj-4" id="proj-4">
-                                <div class="projetc-img-links">
-                                    <div class="proj-img">
-                                        <img class="black-img" src="img/p4-b-w.webp" alt="image of UI web page">
-                                        <img class="colour-img" src="img/p4-colour.webp" alt="image of UI web page">
-                                    </div>
-                                    <hr class="proj-divider">
-                                    <aside class="proj-nav">
-                                        <img class="aside-bg" src="img/project-menu-bg.svg" alt="ribbon">
-                                        <h3 class="live-text">Live Links</h3>
-                                        <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
-                                        <a href="https://samatkinsonmodeste.github.io/Treehouse-Project-4-SASS/"
-                                            target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
-                                                alt="browser-window-icon"></a>
-                                        <a href="https://github.com/SamAtkinsonModeste/Treehouse-Project-4-SASS"
-                                            target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
-                                                alt="gitHub icon"></a>
-                                    </aside>
-                                </div>
-                                <div class="project-info">
-                                    <p class="info-head p4">A UI for web pages</p>
-                                    <div class="made-with">
-                                        <p class="created-with">Created with:</p>
-                                        <img src="img/html-made-with.svg" alt="html-icon">
-                                        <img src="img/sass-made-with.svg" alt="sass-icon">
-                                    </div>
-                                </div>
-                            </div>
-                            <!--PROJECT-5-->
-                            <div class="project-container proj-5" id="proj-5">
-                                <div class="projetc-img-links">
-                                    <div class="proj-img">
-                                        <img class="black-img" src="img/p5-b-w.webp" alt="image of photo gallery">
-                                        <img class="colour-img" src="img/p5-colour.webp" alt="image of photo gallery">
-                                    </div>
-                                    <hr class="proj-divider">
-                                    <aside class="proj-nav">
-                                        <img class="aside-bg" src="img/project-menu-bg.svg" alt="ribbon">
-                                        <h3 class="live-text">Live Links</h3>
-                                        <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
-                                        <a href="https://samatkinsonmodeste.github.io/treehouse-project-5-interactive-photo-gallery/"
-                                            target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
-                                                alt="browser-window-icon"></a>
-                                        <a href="https://github.com/SamAtkinsonModeste/treehouse-project-5-interactive-photo-gallery"
-                                            target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
-                                                alt="gitHub icon"></a>
-                                    </aside>
-                                </div>
-                                <div class="project-info">
-                                    <p class="info-head p5">A photo gallery with search functionality</p>
-                                    <div class="made-with">
-                                        <p class="created-with">Created with:</p>
-                                        <img src="img/html-made-with.svg" alt="html-icon">
-                                        <img src="img/css-made-with.svg" alt="css-icon">
-                                        <img src="img/js-made-with.svg" alt="javascript-icon">
-                                    </div>
-                                </div>
-                            </div>
-                            <!--PROJECT-6-->
-                            <div class="project-container proj-6" id="proj-6">
-                                <div class="projetc-img-links">
-                                    <div class="proj-img">
-                                        <img class="black-img" src="img/p6-b-w.webp" alt="image of Harry Potter game">
-                                        <img class="colour-img" src="img/p6-colour.webp"
-                                            alt="image of Harry Potter game">
-                                    </div>
-                                    <hr class="proj-divider">
-                                    <aside class="proj-nav">
-                                        <img class="aside-bg" src="img/project-menu-bg.svg" alt="ribbon">
-                                        <h3 class="live-text">Live Links</h3>
-                                        <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
-                                        <a href="https://samatkinsonmodeste.github.io/Project-6-HP-Game/"
-                                            target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
-                                                alt="browser-window-icon"></a>
-                                        <a href="https://github.com/SamAtkinsonModeste/Project-6-HP-Game"
-                                            target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
-                                                alt="gitHub icon"></a>
-                                    </aside>
-                                </div>
-                                <div class="project-info">
-                                    <p class="info-head p6">A Harry Potter word game</p>
-                                    <div class="made-with">
-                                        <p class="created-with">Created with:</p>
-                                        <img src="img/ps-made-with.svg" alt="photoshop-icon">
-                                        <img src="img/html-made-with.svg" alt="html-icon">
-                                        <img src="img/css-made-with.svg" alt="css-icon">
-                                        <img src="img/js-made-with.svg" alt="javascript-icon">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <!--PROJECT-7-->
-                            <div class="project-container proj-7" id="proj-7">
-                                <div class="projetc-img-links">
-                                    <div class="proj-img">
-                                        <img class="black-img" src="img/p7-b-w.webp" alt="image of dashboard">
-                                        <img class="colour-img" src="img/p7-colour.webp" alt="image of dashboard">
-                                    </div>
-                                    <hr class="proj-divider">
-                                    <aside class="proj-nav">
-                                        <img class="aside-bg" src="img/project-menu-bg.svg" alt="ribbon">
-                                        <h3 class="live-text">Live Links</h3>
-                                        <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
-                                        <a href="https://samatkinsonmodeste.github.io/Treehouse-Project-7-Dashboard/"
-                                            target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
-                                                alt="browser-window-icon"></a>
-                                        <a href="https://github.com/SamAtkinsonModeste/Treehouse-Project-7-Dashboard"
-                                            target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
-                                                alt="gitHub icon"></a>
-                                    </aside>
-                                </div>
-                                <div class="project-info">
-                                    <p class="info-head p7">A Dashboard that tracks user social media activity</p>
-                                    <div class="made-with">
-                                        <p class="created-with">Created with:</p>
-                                        <img src="img/ps-made-with.svg" alt="photoshop-icon">
-                                        <img src="img/html-made-with.svg" alt="html-icon">
-                                        <img src="img/css-made-with.svg" alt="css-icon">
-                                        <img src="img/js-made-with.svg" alt="javascript-icon">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <!--PROJECT-8-->
-                            <div class="project-container proj-8" id="proj-8">
-                                <div class="projetc-img-links">
-                                    <div class="proj-img">
-                                        <img class="black" src="img/p8-b-w.webp" alt="image of employees">
-                                        <img class="colour-img" src="img/p8-colour.webp" alt="image of employees">
-                                    </div>
-                                    <hr class="proj-divider">
-                                    <aside class="proj-nav">
-                                        <img class="aside-bg" src="img/project-menu-bg.svg" alt="ribbon">
-                                        <h3 class="live-text">Live Links</h3>
-                                        <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
-                                        <a href="https://samatkinsonmodeste.github.io/Project-8-API-Employee-Directory/"
-                                            target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
-                                                alt="browser-window-icon"></a>
-                                        <a href="https://github.com/SamAtkinsonModeste/Project-8-API-Employee-Directory"
-                                            target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
-                                                alt="gitHub icon"></a>
-                                    </aside>
-                                </div>
-                                <div class="project-info">
-                                    <p class="info-head p8">Using an API for an employee directory for employees to
-                                        share
-                                        contact information</p>
-                                    <div class="made-with">
-                                        <p class="created-with">Created with:</p>
-                                        <img src="img/html-made-with.svg" alt="html-icon">
-                                        <img src="img/css-made-with.svg" alt="css-icon">
-                                        <img src="img/js-made-with.svg" alt="javascript-icon">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <!--LOGO-RTB-->
-                            <div class="logo-container logo-rtb" id="logo-rtb">
-                                <div class="logo-img">
-                                    <img src="img/rtb-logo.webp" alt="Raise the Barre's logo">
-                                </div>
-                                <div class="logo-info">
-                                    <h2 class="logo-head rtb-logo">Raising The Barre</h2>
-                                    <div class="logo-info">
-                                        <p class="logo-text">This logo was created for a musical theatre workshop.<br>
-                                            The centre character is a nod to Bob Fosse.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--LOGO-S74-->
-                            <div class="logo-container logo-S74" id="logo-S74">
-                                <div class="logo-img">
-                                    <img src="img/s74-logo.webp" alt="S74 Production's logo">
-                                </div>
-                                <div class="logo-info">
-                                    <h2 class="logo-head s74-logo">S74 Productions</h2>
-                                    <div class="logo-info">
-                                        <p class="logo-text">A dance school wanted a similar logo,<br>
-                                            but more sophisticated for their production company.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--LOGO-YOGA-->
-                            <div class="logo-container logo-way" id="logo-way">
-                                <div class="logo-img">
-                                    <img src="img/yoga-logo.webp" alt="Yoga logo">
-                                </div>
-                                <div class="logo-info">
-                                    <h2 class="logo-head way-logo">Denyce Way</h2>
-                                    <div class="logo-info">
-                                        <p class="logo-text">Denyce wanted an organic logo for her yoga classes.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-                        </div>
-                        <!--nav for portfolio slider-->
-                        <div class="proj-slider-nav">
-                            <span class="left-arrow bloc">
-                                <svg id="arrow-left" aria-labelledby="left-arrow">
-                                    <title id="left-arrow">right arrow nav</title>
-                                    <use href="#arrow"></use>
-                                </svg>
-                            </span>
-                            <span class="divider bloc">
-                                <svg id="divider" aria-hidden="true">
-                                    <use href="#nav-bars"></use>
-                                </svg>
-                            </span>
-                            <span class="right-arrow bloc">
-
-                                <svg id="arrow-right" aria-labelledby="right-arrow">
-                                    <title id="right-arrow">right arrow nav</title>
-                                    <use href="#arrow"></use>
-                                </svg>
-
-                            </span>
-                            <ul class="static">
-                                <li><span class="nav-ball bloc" title="Simple One Page Portfolio"></span></li>
-                                <li><span class="nav-ball bloc" title="Web Form"></span></li>
-                                <li><span class="nav-ball bloc" title="A Web UI Kit"></span></li>
-                            </ul>
-                            <ul class="interactive">
-                                <li><span class="nav-ball bloc" title="Interactive Photo Gallery"></span></li>
-                                <li><span class="nav-ball bloc" title="Harry Potter Word Game"></span></li>
-                                <li><span class="nav-ball bloc" title="Social Media Dashboard"></span></li>
-                                <li><span class="nav-ball bloc" title="Empolyee Directory"></span></li>
-                            </ul>
-
-                            <ul class="logos">
-                                <li><span class="nav-ball bloc" title="Raising The Bar Logo"></span></li>
-                                <li><span class="nav-ball bloc" title="S74 Logo"></span></li>
-                                <li><span class="nav-ball bloc" title="Yoga Logo"></span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--ABOUT ME-->
-            <section id="about-me">
-                <div id="inner-about-me">
-                    <div class="about-bg">
-                        <svg id="about-bg" aria-hidden="true">
-                            <use href="#about-glitter"></use>
-                            <use href="#about-bars"></use>
-                        </svg>
-                    </div>
-                    <div class="me-about-img">
-                        <img src="img/profile-pic-about.webp" alt="Image of Sam">
-                    </div>
-                    <p class="hi">Hi I'm Sam</p>
-                    <p>I was a professional dancer.</p>
-                    <p><span class="dance-web">&quot;Dance</span> to <span class="dance-web">web
-                            development</span>....really&#63;&#33;<span class="dance-web">&quot;</span></p>
-                    <p>A dancer is a life learner to maintain and up their skills.<br>
-                        Dance is technical and creative.<br>
-                        A web developer is all the above too.<br>
-                        The only differenceis:<span class="dance-web">&quot;</span>When I execute a function I don't
-                        have to
-                        pointe my feet<span class="dance-web">&#33;&quot;</span><br>
-                        I am very passionate about web development,and creating creative websites,<br>
-                        so much, that I have learnt to use web design tools too.</p>
-                    <div id="skills">
-                        <h2>My Skills</h2>
-                        <hr class="skill-under">
-                        <div class="skill-icons">
-                            <div class="web-development">
-                                <h3 class="web-dev">Web Development</h3>
-                                <div class="dev-icons">
-                                    <ul class="dev-list">
-                                        <li><img src="img/html-skill-icon.svg" alt="HTML-icon"></li>
-                                        <li><img src="img/css-skill-icon.svg" alt="CSS-icon"></li>
-                                        <li><img src="img/sass-skill-icon.svg" alt="Sass-icon"></li>
-                                        <li><img src="img/js-skill-icon.svg" alt="JavaScript-icon"></li>
-                                    </ul>
-
-
-
-
-                                </div>
-                                <h3 class="web-dev">Web Design</h3>
-                                <div class="dev-icons">
-                                    <ul class="design-list">
-                                        <li><img src="img/ai-skill-icon.svg" alt="Illustrator-icon"></li>
-                                        <li><img src="img/ps-skill-icon.svg" alt="Photoshop-icon"></li>
-                                        <li> <img src="img/xd-skill-icon.svg" alt="XD-icon"></li>
-                                    </ul>
-
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--CONTACT ME-->
-            <section id="contact-me">
-                <div class="contact-bg">
-                    <svg id="contact-bg" aria-hidden="true">
+            </div>
+        </section>
+        <!--PORTFOLIO SECTION-->
+        <section id="portfolio">
+            <div id="inner-portfolio">
+                <!--BACKGROUND-IMAGE-PORTFOLIO-->
+                <div class="portfolio-bg">
+                    <svg id="portfolio-bg" aria-hidden="true">
                         <use href="#glitter-port-bg"></use>
                         <use href="#port-contact-bars"></use>
                     </svg>
                 </div>
-                <div id="inner-contact-me">
-                    <h2>Contact Me</h2>
-                    <form action="index.html" method="post">
-                        <p> <label for="name">Name<input type="text" id="name" placeholder="Jean Baxter"
-                                    required></label>
-                        </p>
-                        <p> <label for="email">Email<input type="email" id="email" placeholder="jeanbaxter@me.com"
-                                    required></label></p>
-                        <p> <label for="message">Message<textarea id="message" required></textarea></label></p>
-                        <button type="submit">Send</button>
+                <header class="portfolio-header">
+                    <h2>Portfolio</h2>
+                    <ul>
+                        <li>Static</li>
+                        <li>Interactive</li>
+                        <li>Logos</li>
+                    </ul>
+                </header>
+                <!--Project container-->
+                <div class="project-container">
+                    <div class="project-slider">
+                        <!--PROJECT-2-->
+                        <div class="project-container proj-2" id="proj-2">
+                            <div class="projetc-img-links">
+                                <div class="proj-img">
+                                    <img class="black-img" src="img/p2-b-w.webp" alt="image of profolio page">
+                                    <img class="colour-img" src="img/p2-colour.webp" alt="image of profolio page">
+                                </div>
+                                <hr class="proj-divider">
+                                <aside class="proj-nav">
+                                    <img class="aside-bg" src="img/project-menu-bg.svg" alt="ribbon">
+                                    <h3 class="live-text">Live Links</h3>
+                                    <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
+                                    <a href="https://samatkinsonmodeste.github.io/project-2-treehouse-FEWDtechdegree/"
+                                        target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
+                                            alt="browser-window-icon"></a>
+                                    <a href="https://github.com/SamAtkinsonModeste/project-2-treehouse-FEWDtechdegree"
+                                        target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
+                                            alt="gitHub icon"></a>
+                                </aside>
+                            </div>
+                            <div class="project-info">
+                                <p class="info-head p2">Simple one page portfolio</p>
+                                <div class="made-with">
+                                    <p class="created-with">Created with:</p>
+                                    <img src="img/html-made-with.svg" alt="html-icon">
+                                    <img src="img/css-made-with.svg" alt="css-icon">
+                                    <img src="img/ps-made-with.svg" alt="photoshop-icon">
+                                </div>
+                            </div>
+                        </div>
+                        <!--PROJECT-3-->
+                        <div class="project-container proj-3" id="proj-3">
+                            <div class="projetc-img-links">
+                                <div class="proj-img">
+                                    <img class="black-img" src="img/p3-b-w.webp" alt="image of web form">
+                                    <img class="colour-img" src="img/p3-colour.webp" alt="image of web form">
+                                </div>
+                                <hr class="proj-divider">
+                                <aside class="proj-nav">
+                                    <img class="aside-bg" src="img/project-menu-bg.svg" alt="ribbon">
+                                    <h3 class="live-text">Live Links</h3>
+                                    <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
+                                    <a href="https://samatkinsonmodeste.github.io/TreeHouse_Project_3_OnlineForm/"
+                                        target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
+                                            alt="browser-window-icon"></a>
+                                    <a href="https://github.com/SamAtkinsonModeste/TreeHouse_Project_3_OnlineForm"
+                                        target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
+                                            alt="gitHub icon"></a>
+                                </aside>
+                            </div>
+                            <div class="project-info">
+                                <p class="info-head p3">A web form for a newsletter about code</p>
+                                <div class="made-with">
+                                    <p class="created-with">Created with:</p>
+                                    <img src="img/html-made-with.svg" alt="html-icon">
+                                    <img src="img/css-made-with.svg" alt="css-icon">
+                                </div>
+                            </div>
+                        </div>
+                        <!--PROJECT-4-->
+                        <div class="project-container proj-4" id="proj-4">
+                            <div class="projetc-img-links">
+                                <div class="proj-img">
+                                    <img class="black-img" src="img/p4-b-w.webp" alt="image of UI web page">
+                                    <img class="colour-img" src="img/p4-colour.webp" alt="image of UI web page">
+                                </div>
+                                <hr class="proj-divider">
+                                <aside class="proj-nav">
+                                    <img class="aside-bg" src="img/project-menu-bg.svg" alt="ribbon">
+                                    <h3 class="live-text">Live Links</h3>
+                                    <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
+                                    <a href="https://samatkinsonmodeste.github.io/Treehouse-Project-4-SASS/"
+                                        target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
+                                            alt="browser-window-icon"></a>
+                                    <a href="https://github.com/SamAtkinsonModeste/Treehouse-Project-4-SASS"
+                                        target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
+                                            alt="gitHub icon"></a>
+                                </aside>
+                            </div>
+                            <div class="project-info">
+                                <p class="info-head p4">A UI for web pages</p>
+                                <div class="made-with">
+                                    <p class="created-with">Created with:</p>
+                                    <img src="img/html-made-with.svg" alt="html-icon">
+                                    <img src="img/sass-made-with.svg" alt="sass-icon">
+                                </div>
+                            </div>
+                        </div>
+                        <!--PROJECT-5-->
+                        <div class="project-container proj-5" id="proj-5">
+                            <div class="projetc-img-links">
+                                <div class="proj-img">
+                                    <img class="black-img" src="img/p5-b-w.webp" alt="image of photo gallery">
+                                    <img class="colour-img" src="img/p5-colour.webp" alt="image of photo gallery">
+                                </div>
+                                <hr class="proj-divider">
+                                <aside class="proj-nav">
+                                    <img class="aside-bg" src="img/project-menu-bg.svg" alt="ribbon">
+                                    <h3 class="live-text">Live Links</h3>
+                                    <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
+                                    <a href="https://samatkinsonmodeste.github.io/treehouse-project-5-interactive-photo-gallery/"
+                                        target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
+                                            alt="browser-window-icon"></a>
+                                    <a href="https://github.com/SamAtkinsonModeste/treehouse-project-5-interactive-photo-gallery"
+                                        target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
+                                            alt="gitHub icon"></a>
+                                </aside>
+                            </div>
+                            <div class="project-info">
+                                <p class="info-head p5">A photo gallery with search functionality</p>
+                                <div class="made-with">
+                                    <p class="created-with">Created with:</p>
+                                    <img src="img/html-made-with.svg" alt="html-icon">
+                                    <img src="img/css-made-with.svg" alt="css-icon">
+                                    <img src="img/js-made-with.svg" alt="javascript-icon">
+                                </div>
+                            </div>
+                        </div>
+                        <!--PROJECT-6-->
+                        <div class="project-container proj-6" id="proj-6">
+                            <div class="projetc-img-links">
+                                <div class="proj-img">
+                                    <img class="black-img" src="img/p6-b-w.webp" alt="image of Harry Potter game">
+                                    <img class="colour-img" src="img/p6-colour.webp" alt="image of Harry Potter game">
+                                </div>
+                                <hr class="proj-divider">
+                                <aside class="proj-nav">
+                                    <img class="aside-bg" src="img/project-menu-bg.svg" alt="ribbon">
+                                    <h3 class="live-text">Live Links</h3>
+                                    <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
+                                    <a href="https://samatkinsonmodeste.github.io/Project-6-HP-Game/"
+                                        target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
+                                            alt="browser-window-icon"></a>
+                                    <a href="https://github.com/SamAtkinsonModeste/Project-6-HP-Game"
+                                        target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
+                                            alt="gitHub icon"></a>
+                                </aside>
+                            </div>
+                            <div class="project-info">
+                                <p class="info-head p6">A Harry Potter word game</p>
+                                <div class="made-with">
+                                    <p class="created-with">Created with:</p>
+                                    <img src="img/ps-made-with.svg" alt="photoshop-icon">
+                                    <img src="img/html-made-with.svg" alt="html-icon">
+                                    <img src="img/css-made-with.svg" alt="css-icon">
+                                    <img src="img/js-made-with.svg" alt="javascript-icon">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--PROJECT-7-->
+                        <div class="project-container proj-7" id="proj-7">
+                            <div class="projetc-img-links">
+                                <div class="proj-img">
+                                    <img class="black-img" src="img/p7-b-w.webp" alt="image of dashboard">
+                                    <img class="colour-img" src="img/p7-colour.webp" alt="image of dashboard">
+                                </div>
+                                <hr class="proj-divider">
+                                <aside class="proj-nav">
+                                    <img class="aside-bg" src="img/project-menu-bg.svg" alt="ribbon">
+                                    <h3 class="live-text">Live Links</h3>
+                                    <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
+                                    <a href="https://samatkinsonmodeste.github.io/Treehouse-Project-7-Dashboard/"
+                                        target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
+                                            alt="browser-window-icon"></a>
+                                    <a href="https://github.com/SamAtkinsonModeste/Treehouse-Project-7-Dashboard"
+                                        target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
+                                            alt="gitHub icon"></a>
+                                </aside>
+                            </div>
+                            <div class="project-info">
+                                <p class="info-head p7">A Dashboard that tracks user social media activity</p>
+                                <div class="made-with">
+                                    <p class="created-with">Created with:</p>
+                                    <img src="img/ps-made-with.svg" alt="photoshop-icon">
+                                    <img src="img/html-made-with.svg" alt="html-icon">
+                                    <img src="img/css-made-with.svg" alt="css-icon">
+                                    <img src="img/js-made-with.svg" alt="javascript-icon">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--PROJECT-8-->
+                        <div class="project-container proj-8" id="proj-8">
+                            <div class="projetc-img-links">
+                                <div class="proj-img">
+                                    <img class="black" src="img/p8-b-w.webp" alt="image of employees">
+                                    <img class="colour-img" src="img/p8-colour.webp" alt="image of employees">
+                                </div>
+                                <hr class="proj-divider">
+                                <aside class="proj-nav">
+                                    <img class="aside-bg" src="img/project-menu-bg.svg" alt="ribbon">
+                                    <h3 class="live-text">Live Links</h3>
+                                    <img class="nav-deco chain-link" src="img/chain-link.svg" alt="link of a chain">
+                                    <a href="https://samatkinsonmodeste.github.io/Project-8-API-Employee-Directory/"
+                                        target="_blank"><img class="nav-deco browser" src="img/browser-win.svg"
+                                            alt="browser-window-icon"></a>
+                                    <a href="https://github.com/SamAtkinsonModeste/Project-8-API-Employee-Directory"
+                                        target="_blank"><img class="nav-deco git" src="img/gitHub.svg"
+                                            alt="gitHub icon"></a>
+                                </aside>
+                            </div>
+                            <div class="project-info">
+                                <p class="info-head p8">Using an API for an employee directory for employees to
+                                    share
+                                    contact information</p>
+                                <div class="made-with">
+                                    <p class="created-with">Created with:</p>
+                                    <img src="img/html-made-with.svg" alt="html-icon">
+                                    <img src="img/css-made-with.svg" alt="css-icon">
+                                    <img src="img/js-made-with.svg" alt="javascript-icon">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--LOGO-RTB-->
+                        <div class="logo-container logo-rtb" id="logo-rtb">
+                            <div class="logo-img">
+                                <img src="img/rtb-logo.webp" alt="Raise the Barre's logo">
+                            </div>
+                            <div class="logo-info">
+                                <h2 class="logo-head rtb-logo">Raising The Barre</h2>
+                                <div class="logo-info">
+                                    <p class="logo-text">This logo was created for a musical theatre workshop.<br>
+                                        The centre character is a nod to Bob Fosse.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--LOGO-S74-->
+                        <div class="logo-container logo-S74" id="logo-S74">
+                            <div class="logo-img">
+                                <img src="img/s74-logo.webp" alt="S74 Production's logo">
+                            </div>
+                            <div class="logo-info">
+                                <h2 class="logo-head s74-logo">S74 Productions</h2>
+                                <div class="logo-info">
+                                    <p class="logo-text">A dance school wanted a similar logo,<br>
+                                        but more sophisticated for their production company.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--LOGO-YOGA-->
+                        <div class="logo-container logo-way" id="logo-way">
+                            <div class="logo-img">
+                                <img src="img/yoga-logo.webp" alt="Yoga logo">
+                            </div>
+                            <div class="logo-info">
+                                <h2 class="logo-head way-logo">Denyce Way</h2>
+                                <div class="logo-info">
+                                    <p class="logo-text">Denyce wanted an organic logo for her yoga classes.</p>
+                                </div>
+                            </div>
+                        </div>
 
 
-                    </form>
+
+
+                    </div>
+                    <!--nav for portfolio slider-->
+                    <div class="proj-slider-nav">
+                        <span class="left-arrow bloc">
+                            <svg id="arrow-left" aria-labelledby="left-arrow">
+                                <title id="left-arrow">right arrow nav</title>
+                                <use href="#arrow"></use>
+                            </svg>
+                        </span>
+                        <span class="divider bloc">
+                            <svg id="divider" aria-hidden="true">
+                                <use href="#nav-bars"></use>
+                            </svg>
+                        </span>
+                        <span class="right-arrow bloc">
+
+                            <svg id="arrow-right" aria-labelledby="right-arrow">
+                                <title id="right-arrow">right arrow nav</title>
+                                <use href="#arrow"></use>
+                            </svg>
+
+                        </span>
+                        <ul class="static">
+                            <li><span class="nav-ball bloc" title="Simple One Page Portfolio"></span></li>
+                            <li><span class="nav-ball bloc" title="Web Form"></span></li>
+                            <li><span class="nav-ball bloc" title="A Web UI Kit"></span></li>
+                        </ul>
+                        <ul class="interactive">
+                            <li><span class="nav-ball bloc" title="Interactive Photo Gallery"></span></li>
+                            <li><span class="nav-ball bloc" title="Harry Potter Word Game"></span></li>
+                            <li><span class="nav-ball bloc" title="Social Media Dashboard"></span></li>
+                            <li><span class="nav-ball bloc" title="Empolyee Directory"></span></li>
+                        </ul>
+
+                        <ul class="logos">
+                            <li><span class="nav-ball bloc" title="Raising The Bar Logo"></span></li>
+                            <li><span class="nav-ball bloc" title="S74 Logo"></span></li>
+                            <li><span class="nav-ball bloc" title="Yoga Logo"></span></li>
+                        </ul>
+                    </div>
                 </div>
-
-            </section>
-        </main>
-        <footer>
-            <div class="contact-links">
-                <p class="gitHub-foot">
-                    <a href="https://github.com/SamAtkinsonModeste"><img src="img/gitHub.svg" alt="gitHub logo"></a>
-                </p>
-                <p class="linkedIn-foot">
-                    <a href="www.linkedin.com/in/sam-atkinson-modeste"><img src="img/linkedIn.svg"
-                            alt="LinkedIn logo"></a>
-                </p>
             </div>
-            <small><span class="copy">&#169;</span> samantha atkinson modeste 2023</small>
-        </footer>
-    </div>
+        </section>
+        <!--ABOUT ME-->
+        <section id="about-me">
+            <div id="inner-about-me">
+                <div class="about-bg">
+                    <svg id="about-bg" aria-hidden="true">
+                        <use href="#about-glitter"></use>
+                        <use href="#about-bars"></use>
+                    </svg>
+                </div>
+                <div class="me-about-img">
+                    <img src="img/profile-pic-about.webp" alt="Image of Sam">
+                </div>
+                <p class="hi">Hi I'm Sam</p>
+                <p>I was a professional dancer.</p>
+                <p><span class="dance-web">&quot;Dance</span> to <span class="dance-web">web
+                        development</span>....really&#63;&#33;<span class="dance-web">&quot;</span></p>
+                <p>A dancer is a life learner to maintain and up their skills.<br>
+                    Dance is technical and creative.<br>
+                    A web developer is all the above too.<br>
+                    The only differenceis:<span class="dance-web">&quot;</span>When I execute a function I don't
+                    have to
+                    pointe my feet<span class="dance-web">&#33;&quot;</span><br>
+                    I am very passionate about web development,and creating creative websites,<br>
+                    so much, that I have learnt to use web design tools too.</p>
+                <div id="skills">
+                    <h2>My Skills</h2>
+                    <hr class="skill-under">
+                    <div class="skill-icons">
+                        <div class="web-development">
+                            <h3 class="web-dev">Web Development</h3>
+                            <div class="dev-icons">
+                                <ul class="dev-list">
+                                    <li><img src="img/html-skill-icon.svg" alt="HTML-icon"></li>
+                                    <li><img src="img/css-skill-icon.svg" alt="CSS-icon"></li>
+                                    <li><img src="img/sass-skill-icon.svg" alt="Sass-icon"></li>
+                                    <li><img src="img/js-skill-icon.svg" alt="JavaScript-icon"></li>
+                                </ul>
+
+
+
+
+                            </div>
+                            <h3 class="web-dev">Web Design</h3>
+                            <div class="dev-icons">
+                                <ul class="design-list">
+                                    <li><img src="img/ai-skill-icon.svg" alt="Illustrator-icon"></li>
+                                    <li><img src="img/ps-skill-icon.svg" alt="Photoshop-icon"></li>
+                                    <li> <img src="img/xd-skill-icon.svg" alt="XD-icon"></li>
+                                </ul>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--CONTACT ME-->
+        <section id="contact-me">
+            <div class="contact-bg">
+                <svg id="contact-bg" aria-hidden="true">
+                    <use href="#glitter-port-bg"></use>
+                    <use href="#port-contact-bars"></use>
+                </svg>
+            </div>
+            <div id="inner-contact-me">
+                <h2>Contact Me</h2>
+                <form action="index.html" method="post">
+                    <p> <label for="name">Name<input type="text" id="name" placeholder="Jean Baxter" required></label>
+                    </p>
+                    <p> <label for="email">Email<input type="email" id="email" placeholder="jeanbaxter@me.com"
+                                required></label></p>
+                    <p> <label for="message">Message<textarea id="message" required></textarea></label></p>
+                    <button type="submit">Send</button>
+
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="contact-links">
+            <p class="gitHub-foot social-links">
+                <a href="https://github.com/SamAtkinsonModeste"><img src="img/gitHub.svg" alt="gitHub logo"></a>
+            </p>
+            <p class="linkedIn-foot social-links">
+                <a href="www.linkedin.com/in/sam-atkinson-modeste"><img src="img/linkedIn.svg" alt="LinkedIn logo"></a>
+            </p>
+        </div>
+        <small><span class="copy">&#169;</span> samantha atkinson modeste 2023</small>
+    </footer>
+
 </body>
 
 </html>
