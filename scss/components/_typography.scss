@@ -1,0 +1,37 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as mix;
+@use '../utilities/functions' as f;
+
+.creative-text,
+.webDev-text {
+    font-family: $font-family--primary;
+
+}
+
+small {
+    font-family: $font-family--secondary;
+}
+
+.creative-text,
+.webDev-text {
+    @include mix.text($size: f.em(30px), $color: $gold, $l-height: f.em(15px));
+    @include mix.text-shdo($hr: 0, $vrt: 1px, $blur: 2px, $col: rgba($red, 0.5));
+    margin: 0;
+    margin-top: f.em(15px);
+
+}
+
+.webDev-text {
+    @include mix.text($size: f.em(25px));
+    margin-top: f.em(8px);
+
+}
+
+small {
+    color: $gold;
+    text-align: center;
+}
+
+.copy {
+    font-size: f.em(20px);
+}
