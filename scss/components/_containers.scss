@@ -1,4 +1,7 @@
-@use '../utilites/variables' as *;
+@use '../utilities/variables' as *;
+@use '../utilities/extends' as e;
+@use '../utilities/functions' as f;
+@use '../utilities/mixins' as mix;
 
 #ori-home-bg,
 #port-contact-bars-bg,
@@ -17,6 +20,7 @@ body,
     background: $black;
 }
 
+/*OVERLAY*/
 #overlay {
     width: 100vw;
     height: 100vh;
@@ -28,15 +32,184 @@ body,
 }
 
 
-
-.grid-container {
+/*MAIN GRID CONTAINER*/
+#grid-container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto;
+    grid-template-rows: 65px auto 30px;
     grid-template-areas:
         "header"
-        "nav"
         "main"
         "footer";
+
+}
+
+/*HEADER & NAV*/
+.main-header,
+#nav-main {
+    height: 65px;
+}
+
+.main-header {
+    grid-area: header;
+    background: $black;
+    border-bottom: 1px solid $gold;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    @include mix.flexy($just: space-between);
+    // padding: 0 f.em(16px);
+    overflow: hidden;
+
+}
+
+
+#nav-main {
+
+    padding: 0;
+    border: 2px solid $red;
+    border: solid 1px green;
+    background: red;
+    margin: 0;
+    width: 0;
+    transform: translateX(100%);
+
+}
+
+
+.logo-sam {
+    display: none;
+}
+
+.sam-logo,
+.hamburger {
+    height: f.em(59px);
+    width: f.em(59px);
+    border: solid 1px $silver-rust;
+
+}
+
+.sam-logo {
+    margin-right: auto;
+
+}
+
+
+
+
+.burger {
+    display: block;
+    height: f.em(6px);
+    margin: f.em(10px) 0;
+    border-radius: 3px;
+    @include mix.gold-bar;
+}
+
+/*MAIN*/
+main {
+    grid-area: main;
+}
+
+
+/*HOME*/
+#home {
+    height: calc(600px - 65px);
+    margin-bottom: f.em(100px);
+}
+
+.top-home {
+    @include mix.flexy($just: space-between);
+}
+
+/*HOME SVGs*/
+#home-bg,
+#home-bottom {
+    height: 176px;
+    width: 146px;
+}
+
+#home-bottom {
+    transform: rotate(180deg);
+
+}
+
+.sam-img-container {
+    width: f.em(200px);
+}
+
+.full-name {
+    position: relative;
+    top: -67px;
+
+}
+
+.my-names {
+    padding-left: f.em(6px);
+}
+
+.sam-colour,
+.sam-gold {
+    width: 120px;
+}
+
+
+.atkin-colour,
+.mod-colour,
+.atkin-gold,
+.mod-gold {
+    width: 140px;
+}
+
+.nam-colour,
+.nam-gold {
+    position: absolute;
+    top: 0;
+}
+
+.role-and-bg {
+    position: absolute;
+    top: 400px;
+    @include mix.flexy($just: space-between);
+    @include mix.debug($color: $red);
+    color: $gold;
+}
+
+.dev-text {
+    margin-right: auto;
+}
+
+
+
+
+/*FOOTER*/
+footer {
+    grid-area: footer;
+    height: 60px;
+    background: $black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.contact-links {
+    margin-top: 0;
+    @include mix.flexy($just: center);
+}
+
+.social-links {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+}
+
+small {
+    margin: 10px auto 0;
+    display: block;
+    width: 80%;
+    color: white;
+    text-align: center;
+    border: solid 1px greenyellow;
 
 }

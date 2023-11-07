@@ -1,6 +1,8 @@
 // ==========================================================================
 // Mixins
 //==========================================================================
+@use 'variables' as *;
+
 //Text Properties
 @mixin text($size, $l-height: null, $weight: null, $color: null) {
 	font-size: $size;
@@ -18,14 +20,14 @@
 }
 
 //Box Shadow
-@mixin box-shdo($in: null, $hr: 0, $vrt: 0, $blur: 15px, $sphd: null, $col: $black) {
+@mixin box-shdo($in: null, $hr: 0, $vrt: 0, $blur: 15px, $sphd: null, $colour: $black) {
 	box-shadow: $in $hr $vrt $blur $sphd $col;
 }
 
 
 //Gradient
 
-@mixin grad($dir: to bottom, $color1, $color2) {
+@mixin grad($dir: to bottom, $color1, $color2, $color3: null, $color4: null, $color5: null, $color6: null, $color7: null) {
 	background: -webkit-linear-gradient($dir, $color1, $color2);
 	background: -moz-linear-gradient($dir, $color1, $color2);
 	background: -o-linear-gradient($dir, $color1, $color2);
@@ -33,34 +35,14 @@
 
 }
 
+
+@mixin gold-bar {
+	background: linear-gradient($gold-grad-1, $gold-grad-2, 23%, $gold-grad-3, 43%, $gold-grad-4, 57%, $gold-grad-5, 77%, $gold-grad-6, 91%, $gold-grad-7 95%);
+}
+
 //Border 
 @mixin br-default ($pix: 1px, $styl: solid, $colu: null) {
 	border: $pix $styl $colu;
-}
-
-
-
-//Image-background
-
-
-
-
-
-
-
-
-//PSEUDO ELEMENT
-
-@mixin pseu-el ($el, $el-w: null, $el-h: null) {
-	&:#{$el} {
-		@extend %pseudo;
-		width: $el-w;
-		height: $el-h;
-		@content;
-
-	}
-
-
 }
 
 
@@ -74,23 +56,6 @@
 	flex-direction: $dir;
 	flex-wrap: $wrap;
 	justify-content: $just;
-
-}
-
-//BEM Selectors
-
-@mixin e($element) {
-	&__#{$element} {
-		@content;
-	}
-
-}
-
-
-@mixin m($modifier) {
-	&--#{$modifier} {
-		@content;
-	}
 
 }
 
@@ -113,4 +78,11 @@
 			@content;
 		}
 	}
+}
+
+
+//DEBUGING 
+@mixin debug ($pix: 1px, $color: null) {
+	border: solid $pix $color;
+
 }
