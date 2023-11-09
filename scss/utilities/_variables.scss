@@ -63,23 +63,27 @@ $br-rad-lg : 0.750em;
 
 
 
-
-
-
-//Breakpoints
-$brkpoint-sm :411px;
-$brkpoint-md :768px;
-$brkpoint-lg :1024px;
-$brkpoint-xlg :1400px;
-$brkpoint-xxlg :1800px;
-
-
 //Breakpoint Map
 
 $breakpoints: (
-  sm : $brkpoint-sm,
-  med : $brkpoint-md,
-  lg : $brkpoint-lg,
-  x-lg : $brkpoint-xlg,
+  'xxx-sm' : 320px,
+  'xx-sm' : 360px,
+  'x-sm' : 412px,
+  'sm' : 428px,
+  'med': 768px,
+  'lg': 1024px,
+  'x-lg' : 1400px,
+  'xx-lg' : 1800px,
 
-  )
+);
+
+$breakheights: (
+  'xx-short': 568px,
+  'x-short' : 772px,
+  'short' : 780px,
+  'tall' : 800px,
+  'x-tall' : 844px,
+  'xx-tall' : 880px,
+  'xxx-tall' : 915px,
+  'ex-tall' : 932px,
+);

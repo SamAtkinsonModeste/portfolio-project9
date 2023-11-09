@@ -62,19 +62,21 @@
 
 //Media Query 
 
-@mixin mq($break) {
-	$brk-value : map-get($breakpoints, $break);
-	$med : map-get($breakpoints, "med");
+@mixin mq($break-w, $break-h) {
+	$brk-widthvalue : map-get($breakpoints, $break-w);
+	$brk-heightvalue : map-get($breakheights, $break-h);
+	$sm : map-get($breakpoints, "xxx-sm");
+	$short: map-get($breakheights, "xx-short");
 
-	@if $brk-value < $med {
-		@media (max-width: $brk-value ) {
+	@if $brk-widthvalue < $sm and $brk-heightvalue < $short {
+		@media (max-width: $brk-widthvalue ) and (max-height: $brk-heightvalue) {
 			@content;
 		}
 
 	}
 
 	@else {
-		@media (min-width: $brk-value) {
+		@media (min-width: $brk-widthvalue) and (min-height: $brk-heightvalue) {
 			@content;
 		}
 	}

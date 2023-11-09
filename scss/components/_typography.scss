@@ -14,18 +14,21 @@ small {
 
 .creative-text,
 .webDev-text {
-    @include mix.text($size: f.em(30px), $color: $gold, $l-height: f.em(15px));
+    @include mix.text($size: f.em(17px), $color: $gold, $l-height: f.em(17px));
     @include mix.text-shdo($hr: 0, $vrt: 1px, $blur: 2px, $col: rgba($red, 0.5));
     margin: 0;
-    margin-top: f.em(15px);
+    margin-top: f.em(20px);
+    padding-left: f.em(6px);
 
 }
 
 .webDev-text {
-    @include mix.text($size: f.em(25px));
-    margin-top: f.em(8px);
+    @include mix.text($size: f.em(15px));
+    margin-top: f.em(4px);
 
 }
+
+
 
 small {
     color: $gold;

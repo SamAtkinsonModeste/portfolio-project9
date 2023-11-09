@@ -124,7 +124,7 @@ main {
 #home {
     grid-area: home;
     // height: calc(600px - 65px);
-    margin-bottom: f.em(100px);
+    // margin-bottom: f.em(100px);
 }
 
 .top-home {
@@ -144,22 +144,25 @@ main {
 }
 
 .sam-img-container {
-    width: f.em(200px);
+    width: f.em(180px);
 }
 
 .full-name {
     position: relative;
     top: f.em(-40px);
 
+
+
 }
 
 .my-names {
     padding-left: f.em(6px);
+
 }
 
 .sam-colour,
 .sam-gold {
-    width: f.em(100px);
+    width: f.em(80px);
 }
 
 
@@ -167,7 +170,7 @@ main {
 .mod-colour,
 .atkin-gold,
 .mod-gold {
-    width: f.em(110px);
+    width: f.em(90px);
 }
 
 .nam-colour,
@@ -178,7 +181,7 @@ main {
 
 .role-and-bg {
     position: absolute;
-    top: f.em(298px);
+    top: f.em(250px);
     width: 100%;
     @include mix.flexy($just: space-between);
     // @include mix.debug($color: $red);
@@ -193,7 +196,9 @@ main {
     // @include mix.debug($color: green);
 }
 
-
+.bg-bottom {
+    transform: translateY(-40px);
+}
 
 #portfolio {
     grid-area: portfolio;
