@@ -20,11 +20,26 @@ small {
     margin-top: f.em(20px);
     padding-left: f.em(6px);
 
+
+    //MEDIA QUERIES
+    @include mix.mq('xx-sm', 'x-short') {
+        @include mix.text($size: f.em(40px), $color: $gold, $l-height: f.em(14px));
+        margin-top: 0;
+        padding-left: f.em(3px);
+    }
+
 }
 
 .webDev-text {
     @include mix.text($size: f.em(15px));
     margin-top: f.em(4px);
+
+
+    //MEDIA QUERIES
+    @include mix.mq('xx-sm', 'x-short') {
+        @include mix.text($size: f.em(35px));
+
+    }
 
 }
 

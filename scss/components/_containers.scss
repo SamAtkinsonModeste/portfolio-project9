@@ -46,12 +46,9 @@ body,
 
 /*HEADER & NAV*/
 .main-header {
-    height: 65px;
-}
-
-.main-header {
     grid-area: header;
     background: $black;
+    height: 55px;
     border-bottom: 1px solid $gold;
     width: 100vw;
     position: fixed;
@@ -107,15 +104,7 @@ body,
 
 /*MAIN*/
 main {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "home"
-        "portfolio"
-        "about"
-        "contact";
+    margin-top: -54px;
 
 }
 
@@ -136,20 +125,46 @@ main {
 #home-bottom {
     height: 176px;
     width: 146px;
+
+    @include mix.mq('xx-sm', 'x-short') {
+        height: 196px;
+        width: 166px;
+    }
 }
 
 #home-bottom {
     transform: rotate(180deg);
 
+    // @include mix.mq('xx-sm', 'xx-tall') {
+    //     margin-top: 10%;
+    // }
+
 }
 
 .sam-img-container {
     width: f.em(180px);
+
+    //MEDIA QUERIES
+    @include mix.mq('xx-sm', 'x-short') {
+
+        width: f.em(200px);
+    }
+
+    @include mix.mq('xx-sm', 'xx-tall') {
+
+        width: f.em(220px);
+    }
 }
 
 .full-name {
     position: relative;
     top: f.em(-40px);
+
+    //MEDIA QUERIES
+    @include mix.mq('xx-sm', 'xx-tall') {
+
+        top: f.em(-10px);
+    }
 
 
 
@@ -163,6 +178,12 @@ main {
 .sam-colour,
 .sam-gold {
     width: f.em(80px);
+
+    //MEDIA QUERIES
+    @include mix.mq('xx-sm', 'x-short') {
+
+        width: f.em(140px);
+    }
 }
 
 
@@ -171,6 +192,12 @@ main {
 .atkin-gold,
 .mod-gold {
     width: f.em(90px);
+
+    //MEDIA QUERIES
+    @include mix.mq('xx-sm', 'x-short') {
+
+        width: f.em(200px);
+    }
 }
 
 .nam-colour,
@@ -184,7 +211,31 @@ main {
     top: f.em(250px);
     width: 100%;
     @include mix.flexy($just: space-between);
+
     // @include mix.debug($color: $red);
+
+    //MEDIA QUERIES
+    @include mix.mq('xx-sm', 'x-short') {
+
+        top: f.em(560px);
+    }
+
+    @include mix.mq('xx-sm', 'xx-tall') {
+
+        top: f.em(660px);
+    }
+
+    @include mix.mq('xx-sm', 'xxx-tall') {
+
+        top: f.em(700px);
+
+    }
+
+    @include mix.mq('xx-sm', 'ex-tall') {
+
+        top: f.em(715px);
+
+    }
 
 }
 
@@ -194,6 +245,17 @@ main {
     width: 70%;
     padding-top: f.em(25px);
     // @include mix.debug($color: green);
+
+
+    //MEDIA QUERIES
+    @include mix.mq('xx-sm', 'x-short') {
+        margin-top: 0;
+    }
+
+    @include mix.mq('xx-sm', 'xx-tall') {
+        margin-top: 0;
+        padding-top: 0;
+    }
 }
 
 .bg-bottom {
@@ -226,6 +288,8 @@ footer {
     bottom: 0;
     width: 100%;
     z-index: 5;
+    @include mix.debug($color: rgb(184, 4, 172));
+
 }
 
 .contact-links {

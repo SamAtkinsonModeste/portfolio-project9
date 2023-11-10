@@ -65,7 +65,7 @@
 @mixin mq($break-w, $break-h) {
 	$brk-widthvalue : map-get($breakpoints, $break-w);
 	$brk-heightvalue : map-get($breakheights, $break-h);
-	$sm : map-get($breakpoints, "xxx-sm");
+	$sm : map-get($breakpoints, "xx-sm");
 	$short: map-get($breakheights, "xx-short");
 
 	@if $brk-widthvalue < $sm and $brk-heightvalue < $short {
