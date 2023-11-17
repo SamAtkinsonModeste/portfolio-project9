@@ -3,50 +3,177 @@
 @use '../utilities/functions' as f;
 
 .creative-text,
-.webDev-text {
+.webDev-text,
+.head-port,
+.slide-nav,
+.live-text,
+.logo-head,
+.about-me,
+.dance-web,
+.skill-head,
+.web-dev,
+small {
+    color: $gold;
+}
+
+
+.info-head,
+.created-with,
+.logo-text,
+.hi,
+#about-me p {
+    color: $silver-rust;
+}
+
+
+.head-port,
+.logo-head {
+    text-align: center;
+}
+
+
+.creative-text,
+.webDev-text,
+.head-port,
+.slide-nav,
+.logo-head,
+.about-me,
+.skill-head {
     font-family: $font-family--primary;
+    @include mix.text-shdo($hr: 0, $vrt: 1px, $blur: 2px, $col: rgba($red, 0.5));
 
 }
 
-small {
+
+
+
+
+
+
+small,
+.dance-web,
+.web-dev {
     font-family: $font-family--secondary;
 }
 
+.web-dev {
+    @include mix.text-shdo($hr: 0, $vrt: f.em(0.1px), $col: $silver-rust);
+}
+
+
+
 .creative-text,
 .webDev-text {
-    @include mix.text($size: f.em(17px), $color: $gold, $l-height: f.em(17px));
-    @include mix.text-shdo($hr: 0, $vrt: 1px, $blur: 2px, $col: rgba($red, 0.5));
+    @include mix.text($size: f.em(17px), $l-height: f.em(17px));
     margin: 0;
     margin-top: f.em(20px);
     padding-left: f.em(6px);
-
-
-    //MEDIA QUERIES
-    @include mix.mq('xx-sm', 'x-short') {
-        @include mix.text($size: f.em(40px), $color: $gold, $l-height: f.em(14px));
-        margin-top: 0;
-        padding-left: f.em(3px);
-    }
 
 }
 
 .webDev-text {
     @include mix.text($size: f.em(15px));
     margin-top: f.em(4px);
-
-
-    //MEDIA QUERIES
-    @include mix.mq('xx-sm', 'x-short') {
-        @include mix.text($size: f.em(35px));
-
-    }
-
 }
 
 
 
+/*******************
+     PORTFOLIO
+*******************/
+
+
+.head-port {
+    @include mix.text($size: f.em(25px));
+    margin-top: f.em(-105px);
+}
+
+.slide-nav,
+.live-text,
+.created-with {
+    font-style: italic;
+}
+
+
+.live-text {
+    font-size: f.em(10px);
+    font-weight: bold;
+    transform: translateY(-150px);
+}
+
+.info-head,
+.logo-text,
+#about-me p {
+    font-family: $font-family--parag;
+    @include mix.text($size: f.em(14px), $l-height: f.em(24px));
+    text-align: center;
+}
+
+.proj-7 .info-head,
+.proj-8 .info-head {
+    font-size: f.em(12px);
+}
+
+.created-with {
+    @include mix.text($size: f.em(15px), $l-height: f.em(24px));
+}
+
+.way-logo {
+    margin: f.em(2px) 0 f.em(10px) 0;
+
+}
+
+/*******************
+     ABOUT ME
+*******************/
+#about-me {
+    margin-bottom: f.em(575px);
+}
+
+#about-me p {
+    width: 99%;
+    margin: 0 auto;
+}
+
+.about-me,
+.skill-head {
+    text-align: right;
+}
+
+.about-me,
+.skill-head {
+    @include mix.text($size: f.em(16px), $l-height: f.em(32px));
+
+}
+
+.about-me {
+    width: 65px;
+    margin-top: f.em(39px);
+    margin-right: f.em(-31px);
+}
+
+.skill-head {
+    margin: 0 f.em(25px) f.em(-10px) 0;
+
+}
+
+.web-dev {
+    @include mix.text($size: f.em(14px), $l-height: f.em(22px));
+    text-align: center;
+    margin: 0 auto f.em(25px);
+}
+
+.design-dev {
+    margin-top: f.em(25px);
+}
+
+
+
+/*******************
+     FOOTER
+*******************/
+
 small {
-    color: $gold;
     text-align: center;
 }
 

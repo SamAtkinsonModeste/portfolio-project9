@@ -1,7 +1,80 @@
+@use '../utilities/functions' as f;
+
+
+
 img {
     width: 100%;
 }
 
 .logo {
     height: 59px;
+}
+
+
+/******************************
+    PORTFOLIO IMAGES
+******************************/
+.colour-img {
+    opacity: 0;
+}
+
+.aside-bg {
+    display: block;
+    width: 56px;
+    height: 150px;
+    transform: scale(1, 1.3) translate(-3px, 11px);
+
+}
+
+.nav-deco {
+    width: 30px;
+    transform: translate(8px, -5px);
+}
+
+.chain-link {
+    width: 20px;
+    transform: translate(15px, -160px);
+}
+
+.browser,
+.git {
+    margin-top: f.em(15px);
+    transform: translate(10px, -170px);
+}
+
+.git {
+    margin-top: f.em(10px);
+}
+
+
+.html-made,
+.css-made,
+.sass-made,
+.js-made,
+.photoshop-made {
+    width: f.em(35px);
+    margin: 0 f.em(5px);
+}
+
+
+.proj-8 .html-made,
+.proj-8 .css-made,
+.proj-8 .js-made {
+    width: f.em(26px);
+    margin-bottom: f.em(10px);
+}
+
+.logo-S74 .logo-img img {
+    margin-top: f.em(68px);
+}
+
+.logo-way .logo-img img {
+    margin-top: f.em(2px);
+}
+
+/*** about me **/
+.me-about-img img {
+    width: 150px;
+    height: 125px;
+    margin-right: f.em(5px);
 }

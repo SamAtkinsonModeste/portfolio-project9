@@ -21,7 +21,7 @@
 
 //Box Shadow
 @mixin box-shdo($in: null, $hr: 0, $vrt: 0, $blur: 15px, $sphd: null, $colour: $black) {
-	box-shadow: $in $hr $vrt $blur $sphd $col;
+	box-shadow: $in $hr $vrt $blur $sphd $colour;
 }
 
 
@@ -37,7 +37,52 @@
 
 
 @mixin gold-bar {
-	background: linear-gradient($gold-grad-1, $gold-grad-2, 23%, $gold-grad-3, 43%, $gold-grad-4, 57%, $gold-grad-5, 77%, $gold-grad-6, 91%, $gold-grad-7 95%);
+	background: -webkit-linear-gradient($gold-grad-1, $gold-grad-2 23%, $gold-grad-3 43%, $gold-grad-4 57%, $gold-grad-5 77%, $gold-grad-6 91%, $gold-grad-7 95%);
+	background: -moz-linear-gradient($gold-grad-1, $gold-grad-2 23%, $gold-grad-3 43%, $gold-grad-4 57%, $gold-grad-5 77%, $gold-grad-6 91%, $gold-grad-7 95%);
+	background: -o-linear-gradient($gold-grad-1, $gold-grad-2 23%, $gold-grad-3 43%, $gold-grad-4 57%, $gold-grad-5 77%, $gold-grad-6 91%, $gold-grad-7 95%);
+	background: linear-gradient($gold-grad-1, $gold-grad-2 23%, $gold-grad-3 43%, $gold-grad-4 57%, $gold-grad-5 77%, $gold-grad-6 91%, $gold-grad-7 95%);
+}
+
+
+
+
+
+@mixin bg-black-grad {
+	background: -webkit-linear-gradient(46deg, $black 8%, $grey, $black 80%);
+	background: -moz-linear-gradient(46deg, $black 8%, $grey, $black 80%);
+	background: -o-linear-gradient(46deg, $black 8%, $grey, $black 80%);
+	background: linear-gradient(46deg, $black 8%, $grey, $black 80%);
+}
+
+
+@mixin bg-proj-cont-grad {
+	background: -webkit-linear-gradient(312deg, $emperor-bg-proj, $grey 4%, $black 21%, $black 46%, $black 79%, $grey 97%, $emperor-bg-proj 100%);
+	background: -moz-linear-gradient(312deg, $emperor-bg-proj, $grey 4%, $black 21%, $black 46%, $black 79%, $grey 97%, $emperor-bg-proj 100%);
+	background: -o-linear-gradient(312deg, $emperor-bg-proj, $grey 4%, $black 21%, $black 46%, $black 79%, $grey 97%, $emperor-bg-proj 100%);
+	background: linear-gradient(312deg, $emperor-bg-proj, $grey 4%, $black 21%, $black 46%, $black 79%, $grey 98%, $emperor-bg-proj 110%);
+
+}
+
+@mixin bg-proj-logo-grad {
+	background: -webkit-linear-gradient(312deg, $emperor-bg-proj, $grey 4%, $silver-rust 21%, $silver-rust 46%, $silver-rust 79%, $grey 97%, $emperor-bg-proj 100%);
+	background: -moz-linear-gradient(312deg, $emperor-bg-proj, $grey 4%, $silver-rust 21%, $silver-rust 46%, $silver-rust 79%, $grey 97%, $emperor-bg-proj 100%);
+	background: -o-linear-gradient(312deg, $emperor-bg-proj, $grey 4%, $silver-rust 21%, $silver-rust 46%, $silver-rust 79%, $grey 97%, $emperor-bg-proj 100%);
+	background: linear-gradient(312deg, $emperor-bg-proj, $grey 4%, $silver-rust 21%, $silver-rust 46%, $silver-rust 79%, $grey 98%, $emperor-bg-proj 110%);
+
+}
+
+@mixin bg-proj-info {
+	background: -webkit-linear-gradient(348deg, $black, $grey 64%, $black);
+	background: -moz-linear-gradient(348deg, $black, $grey 64%, $black);
+	background: -o-linear-gradient(348deg, $black, $grey 64%, $black);
+	background: linear-gradient(348deg, $black, $grey 64%, $black);
+}
+
+@mixin ul-bg($dir-pix: 275px at center left, $col-1: null, $col-2: null) {
+	background: -webkit-radial-gradient($dir-pix, $col-1, $col-2);
+	background: -moz-radial-gradient($dir-pix, $col-1, $col-2);
+	background: -o-radial-gradient($dir-pix, $col-1, $col-2);
+	background: radial-gradient($dir-pix, $col-1, $col-2);
 }
 
 //Border 
