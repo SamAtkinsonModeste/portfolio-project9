@@ -3107,12 +3107,11 @@
 
                     <header class="portfolio-header">
                         <!--BACKGROUND-IMAGE-PORTFOLIO-->
-                        <div class="portfolio-bg">
-                            <svg id="portfolio-bg" aria-hidden="true">
-                                <use href="#glitter-port-bg"></use>
-                                <use href="#port-contact-bars"></use>
-                            </svg>
-                        </div>
+                        <svg id="portfolio-bg" aria-hidden="true">
+                            <use href="#glitter-port-bg"></use>
+                            <use href="#port-contact-bars"></use>
+                        </svg>
+
                         <h2 class="head-port">Portfolio</h2>
                         <ul class="slide-nav">
                             <li>Static</li>
@@ -3487,22 +3486,26 @@
             <!--CONTACT ME-->
             <section id="contact-me">
                 <div id="inner-contact" class="inner-containers">
-                    <div class="contact-bg">
-                        <svg id="contact-bg" aria-hidden="true">
-                            <use href="#glitter-port-bg"></use>
-                            <use href="#port-contact-bars"></use>
-                        </svg>
-                    </div>
-                    <div id="inner-contact-me">
-                        <h2>Contact Me</h2>
+
+                    <svg id="contact-bg" aria-hidden="true">
+                        <use href="#glitter-port-bg"></use>
+                        <use href="#port-contact-bars"></use>
+                    </svg>
+                    <h2 class="contact-h2">Contact Me</h2>
+                    <p class="need-website">
+                        Need a creative website for a small business?<br>
+                        Why not drop me a line and talk about your needs?
+                    </p>
+                    <div id="contact-me-form">
                         <form action="index.html" method="post">
-                            <p> <label for="name">Name<input type="text" id="name" placeholder="Jean Baxter"
-                                        required></label>
+                            <p class="form-p"> <label for="name">Name<input type="text" id="name"
+                                        placeholder="Jean Baxter" required></label>
                             </p>
-                            <p> <label for="email">Email<input type="email" id="email" placeholder="jeanbaxter@me.com"
-                                        required></label></p>
-                            <p> <label for="message">Message<textarea id="message" required></textarea></label></p>
-                            <button type="submit">Send</button>
+                            <p class="form-p"> <label for="email">Email<input type="email" id="email"
+                                        placeholder="jeanbaxter@me.com" required></label></p>
+                            <p class="form-p message"> <label for="message">Message<textarea id="message"
+                                        placeholder="Hi, I need a website for..." required></textarea></label></p>
+                            <button id="submit" type="submit">Send</button>
 
 
                         </form>
