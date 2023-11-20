@@ -12,6 +12,9 @@
 .dance-web,
 .skill-head,
 .web-dev,
+.contact-h2,
+label,
+#submit,
 small {
     color: $gold;
 }
@@ -21,13 +24,18 @@ small {
 .created-with,
 .logo-text,
 .hi,
-#about-me p {
+#about-me p,
+.need-website,
+input,
+textarea {
     color: $silver-rust;
 }
 
 
 .head-port,
-.logo-head {
+.logo-head,
+.contact-h2,
+.need-website {
     text-align: center;
 }
 
@@ -38,22 +46,30 @@ small {
 .slide-nav,
 .logo-head,
 .about-me,
-.skill-head {
+.skill-head,
+.contact-h2,
+label {
     font-family: $font-family--primary;
     @include mix.text-shdo($hr: 0, $vrt: 1px, $blur: 2px, $col: rgba($red, 0.5));
 
 }
 
 
-
-
-
-
-
 small,
 .dance-web,
-.web-dev {
+.web-dev,
+.need-website,
+#submit {
     font-family: $font-family--secondary;
+}
+
+
+.info-head,
+.logo-text,
+#about-me p,
+input,
+textarea {
+    font-family: $font-family--parag;
 }
 
 .web-dev {
@@ -104,7 +120,6 @@ small,
 .info-head,
 .logo-text,
 #about-me p {
-    font-family: $font-family--parag;
     @include mix.text($size: f.em(14px), $l-height: f.em(24px));
     text-align: center;
 }
@@ -126,9 +141,6 @@ small,
 /*******************
      ABOUT ME
 *******************/
-#about-me {
-    margin-bottom: f.em(575px);
-}
 
 #about-me p {
     width: 99%;
@@ -166,6 +178,36 @@ small,
 .design-dev {
     margin-top: f.em(25px);
 }
+
+
+/*******************
+    CONTACT ME
+*******************/
+.contact-h2 {
+    transform: translateY(f.em(-115px));
+}
+
+.need-website {
+    @include mix.text($size: f.em(11px), $l-height: f.em(24px));
+    transform: translateY(f.em(-255px));
+}
+
+::placeholder,
+::-moz-placeholder,
+::-webkit-input-placeholder {
+    font-style: italic;
+
+}
+
+textarea::placeholder,
+textarea::-moz-placeholder,
+textarea::-webkit-placeholder {
+    font-style: italic;
+
+}
+
+
+
 
 
 

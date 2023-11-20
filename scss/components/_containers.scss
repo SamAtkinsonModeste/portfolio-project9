@@ -3,6 +3,9 @@
 @use '../utilities/functions' as f;
 @use '../utilities/mixins' as mix;
 
+/**************************
+      CONTAINERS
+**************************/
 #ori-home-bg,
 #port-contact-bars-bg,
 #arrow-svg,
@@ -23,7 +26,8 @@
     @extend %marg-zero;
 }
 
-main {
+main,
+#contact-me-form {
     @extend %marg-cen;
 }
 
@@ -35,6 +39,17 @@ main {
 #overlay,
 #logo-animation {
     display: none;
+}
+
+#portfolio-bg,
+#contact-bg,
+#submit {
+    display: block;
+}
+
+#portfolio-bg,
+#contact-bg {
+    margin-left: auto;
 }
 
 #grid-container {
@@ -95,7 +110,7 @@ main {
 
 .hamburger {
     cursor: pointer;
-    margin-right: -12px;
+    // margin-right: f.em(2px);
 }
 
 .burger {
@@ -229,16 +244,12 @@ main {
 }
 
 #portfolio-bg,
-.portfolio-bg,
 #contact-bg {
     height: 200px;
     width: 250px;
 }
 
-.portfolio-bg {
-    margin-left: auto;
 
-}
 
 .slide-nav {
     @include mix.flexy($just: center);
@@ -478,7 +489,7 @@ main {
 #inner-about-me {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    width: 320px;
+    // width: 320px;
 }
 
 #about-bg {
@@ -553,9 +564,79 @@ main {
 }
 
 
+/******************************
+    CONTACT ME            
+*******************************/
+
+
 #contact-me {
     grid-area: contact;
-    display: none;
+
+}
+
+#contact-me-form {
+    width: 99%;
+    transform: translateY(f.em(-140px));
+    // @include mix.debug($color: rgb(98, 46, 220));
+
+}
+
+.form-p {
+    @include mix.flexy($just: space-between);
+    margin: f.em(40px) auto;
+    width: 90%;
+    height: f.em(50px);
+
+}
+
+label {
+    border-bottom: f.em(2px) solid $gold;
+    height: f.em(25px);
+
+
+}
+
+input,
+textarea {
+    margin-left: (f.em(30px));
+    background: $black;
+    outline: none;
+    border: none;
+    width: f.em(200px);
+    border-radius: f.em(6px);
+    // @include mix.debug($color: rgb(130, 184, 4));
+
+
+}
+
+textarea {
+    margin-left: (f.em(15px));
+    transform: translateY(-2px);
+    height: f.em(21px);
+
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    background: $black;
+    color: $gold;
+}
+
+
+textarea:focus {
+    height: f.em(60px);
+    transform: translateY(-36px);
+
+}
+
+#submit {
+    background: $black;
+    width: f.em(80px);
+    margin: 0 auto;
+    @include mix.br-default($gold);
+    border-radius: $br-rad;
+    transform: translate(-2px, -18px);
+
 }
 
 /******************************
