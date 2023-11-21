@@ -27,7 +27,8 @@ small {
 #about-me p,
 .need-website,
 input,
-textarea {
+textarea,
+.balls:hover::before {
     color: $silver-rust;
 }
 
@@ -35,7 +36,8 @@ textarea {
 .head-port,
 .logo-head,
 .contact-h2,
-.need-website {
+.need-website,
+.balls:hover::before {
     text-align: center;
 }
 
@@ -68,7 +70,8 @@ small,
 .logo-text,
 #about-me p,
 input,
-textarea {
+textarea,
+.ball-tool-tip {
     font-family: $font-family--parag;
 }
 
@@ -136,6 +139,10 @@ textarea {
 .way-logo {
     margin: f.em(2px) 0 f.em(10px) 0;
 
+}
+
+.balls:hover::before {
+    font-size: f.em(11px);
 }
 
 /*******************

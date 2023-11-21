@@ -43,7 +43,8 @@ main,
 
 #portfolio-bg,
 #contact-bg,
-#submit {
+#submit,
+.ball-tool-tip {
     display: block;
 }
 
@@ -51,6 +52,18 @@ main,
 #contact-bg {
     margin-left: auto;
 }
+
+.hamburger,
+#arrow-right,
+#arrow-left,
+.balls,
+.static,
+.interactive,
+.logo {
+    cursor: pointer;
+    // margin-right: f.em(2px);
+}
+
 
 #grid-container {
     display: grid;
@@ -243,6 +256,10 @@ main {
     // @include mix.debug($color: rgb(4, 184, 34));
 }
 
+.active-proj {
+    border-bottom: f.em(2px) solid $gold;
+}
+
 #portfolio-bg,
 #contact-bg {
     height: 200px;
@@ -254,15 +271,18 @@ main {
 .slide-nav {
     @include mix.flexy($just: center);
     margin-top: f.em(-15px);
+    margin-bottom: f.em(10px);
 }
 
 .slide-nav li {
     margin: 0 5px;
     padding: f.em(3px) f.em(16px);
+    height: f.em(30px);
 }
 
 .projects-container {
     width: 100%;
+    position: relative;
     // @include mix.debug($color: rgb(235, 221, 28));
 
 }
@@ -358,7 +378,7 @@ main {
 
 
 .proj-nav {
-    position: relative;
+    // position: relative;
     width: 56px;
     height: 150px;
     padding: f.em(2px);
@@ -411,13 +431,13 @@ main {
 
 
 .proj-slider-nav {
-    height: 50px;
+    height: 60px;
     width: 100%;
     padding: 0 f.em(2px);
     overflow: hidden;
     @include mix.flexy($just: space-between);
     background: linear-gradient(69deg, $grey, $black, $black, $grey);
-    transform: translateY(-28px);
+    transform: translateY(-18px);
     // @include mix.debug($color: rgb(208, 222, 11));
 }
 
@@ -430,7 +450,7 @@ main {
 #arrow-left {
     width: 40px;
     height: 20px;
-    margin: f.em(15px) f.em(10px);
+    margin: f.em(18px) f.em(10px);
 }
 
 #arrow-left {
@@ -455,6 +475,7 @@ main {
 
 .ul-navs,
 .arrow-nav {
+    position: relative;
     @include mix.br-default($colu: rgba($gold, 0.5));
     border-radius: $br-rad-lg;
 }
@@ -462,7 +483,8 @@ main {
 .static,
 .interactive,
 .logos {
-    margin: f.em(10px) 0;
+    margin: f.em(5px) 0;
+    height: f.em(30px);
     @include mix.flexy();
 }
 
@@ -470,15 +492,35 @@ main {
 
 
 .balls {
-    width: 18px;
-    height: 18px;
-    margin: f.em(2px) f.em(8px);
+    position: relative;
+    width: 20px;
+    height: 20px;
+    padding: f.em(2px);
+    margin: f.em(18px) f.em(10px) f.em(2px);
     border-radius: 100%;
     background: radial-gradient($rad-grad-1, $rad-grad-2, $black );
 }
 
+/*Balls active*/
 .active {
     @include mix.gold-bar;
+}
+
+
+.balls:hover::before {
+    position: absolute;
+    content: "";
+    top: f.em(-32px);
+    left: f.em(12px);
+    height: 6px;
+    width: 110px;
+    background: $black;
+    transform: translateX(-10px);
+    padding: f.em(5px) f.em(5px) f.em(13px);
+    content: attr(data-tool-tip);
+    border-radius: f.em(5px);
+    border: solid 1px $gold;
+    // @include mix.debug($color: rgb(222, 11, 219));
 }
 
 

@@ -545,13 +545,24 @@ p {
 
 #portfolio-bg,
 #contact-bg,
-#submit {
+#submit,
+.ball-tool-tip {
   display: block;
 }
 
 #portfolio-bg,
 #contact-bg {
   margin-left: auto;
+}
+
+.hamburger,
+#arrow-right,
+#arrow-left,
+.balls,
+.static,
+.interactive,
+.logo {
+  cursor: pointer;
 }
 
 #grid-container {
@@ -727,6 +738,10 @@ main {
   width: 100%;
 }
 
+.active-proj {
+  border-bottom: 0.125em solid #D4AF37;
+}
+
 #portfolio-bg,
 #contact-bg {
   height: 200px;
@@ -737,15 +752,18 @@ main {
   display: flex;
   justify-content: center;
   margin-top: -0.9375em;
+  margin-bottom: 0.625em;
 }
 
 .slide-nav li {
   margin: 0 5px;
   padding: 0.1875em 1em;
+  height: 1.875em;
 }
 
 .projects-container {
   width: 100%;
+  position: relative;
 }
 
 .project-slider {
@@ -832,7 +850,6 @@ main {
 }
 
 .proj-nav {
-  position: relative;
   width: 56px;
   height: 150px;
   padding: 0.125em;
@@ -878,14 +895,14 @@ main {
 }
 
 .proj-slider-nav {
-  height: 50px;
+  height: 60px;
   width: 100%;
   padding: 0 0.125em;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
   background: linear-gradient(69deg, #2B2B2B, #000000, #000000, #2B2B2B);
-  transform: translateY(-28px);
+  transform: translateY(-18px);
 }
 
 .arrow-nav {
@@ -897,7 +914,7 @@ main {
 #arrow-left {
   width: 40px;
   height: 20px;
-  margin: 0.9375em 0.625em;
+  margin: 1.125em 0.625em;
 }
 
 #arrow-left {
@@ -919,6 +936,7 @@ main {
 
 .ul-navs,
 .arrow-nav {
+  position: relative;
   border: 1px solid rgba(212, 175, 55, 0.5);
   border-radius: 0.75em;
 }
@@ -926,23 +944,42 @@ main {
 .static,
 .interactive,
 .logos {
-  margin: 0.625em 0;
+  margin: 0.3125em 0;
+  height: 1.875em;
   display: flex;
 }
 
 .balls {
-  width: 18px;
-  height: 18px;
-  margin: 0.125em 0.5em;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  padding: 0.125em;
+  margin: 1.125em 0.625em 0.125em;
   border-radius: 100%;
   background: radial-gradient(#ab0909, #690808, #000000);
 }
 
+/*Balls active*/
 .active {
   background: -webkit-linear-gradient(#a47a1e, #d3a84c 23%, #ffec94 43%, #e6be69 57%, #ffd87c 77%, #c29c49 91%, #b58f3e 95%);
   background: -moz-linear-gradient(#a47a1e, #d3a84c 23%, #ffec94 43%, #e6be69 57%, #ffd87c 77%, #c29c49 91%, #b58f3e 95%);
   background: -o-linear-gradient(#a47a1e, #d3a84c 23%, #ffec94 43%, #e6be69 57%, #ffd87c 77%, #c29c49 91%, #b58f3e 95%);
   background: linear-gradient(#a47a1e, #d3a84c 23%, #ffec94 43%, #e6be69 57%, #ffd87c 77%, #c29c49 91%, #b58f3e 95%);
+}
+
+.balls:hover::before {
+  position: absolute;
+  content: "";
+  top: -2em;
+  left: 0.75em;
+  height: 6px;
+  width: 110px;
+  background: #000000;
+  transform: translateX(-10px);
+  padding: 0.3125em 0.3125em 0.8125em;
+  content: attr(data-tool-tip);
+  border-radius: 0.3125em;
+  border: solid 1px #D4AF37;
 }
 
 /****************************
@@ -1216,14 +1253,16 @@ small {
 #about-me p,
 .need-website,
 input,
-textarea {
+textarea,
+.balls:hover::before {
   color: #CEC6C6;
 }
 
 .head-port,
 .logo-head,
 .contact-h2,
-.need-website {
+.need-website,
+.balls:hover::before {
   text-align: center;
 }
 
@@ -1252,7 +1291,8 @@ small,
 .logo-text,
 #about-me p,
 input,
-textarea {
+textarea,
+.ball-tool-tip {
   font-family: "futura-pt", "sans-serif";
 }
 
@@ -1314,6 +1354,10 @@ textarea {
 
 .way-logo {
   margin: 0.125em 0 0.625em 0;
+}
+
+.balls:hover::before {
+  font-size: 0.6875em;
 }
 
 /*******************
