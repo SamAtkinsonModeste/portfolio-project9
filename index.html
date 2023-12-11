@@ -3020,15 +3020,15 @@
     <div id="mobile-nav">
         <div class="nav-ul">
             <ul class="main-nav">
-                <li>Home</li>
-                <li>Portfolio</li>
-                <li class="logo-sam">logo</li>
-                <li>About Me</li>
-                <li>Contact Me</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li class="logo-sam"><a href="#home"><img class="logo" src="img/sam-logo.svg" alt="sam's logo"></a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#contact-me"></a>Contact Me</li>
             </ul>
         </div>
     </div>
-    <di id="grid-container">
+    <div id="grid-container">
 
         <header class="main-header">
             <div class="sam-logo">
@@ -3057,21 +3057,24 @@
             <section id="home">
                 <div id="inner-home" class="inner-containers">
                     <!--TOP OF HOME SECTION-->
-                    <div class="top-home col-span-2">
+                    <di class="top-home col-span-2">
                         <!--BACKGROUND-IMAGE-->
-                        <svg id="home-bg" aria-hidden="true">
-                            <use href="#giltter"></use>
-                            <use href="#bg-home-bars"></use>
-                        </svg>
-                        <!--PROFILE PIC-->
-                        <div class="sam-img-container">
-                            <img src="img/profile-pic-home.webp" alt="Image of Sam">
+                        <div class="home-top-bg">
+                            <svg viewbox="8 0 56.3 50" id="home-bg" aria-hidden="true">
+                                <use href="#giltter"></use>
+                                <use href="#bg-home-bars"></use>
+                            </svg>
                         </div>
-                    </div>
+                        <!--PROFILE PIC-->
+                        <div class="sam-profile-img-home">
+                            <img class="sam-home" src="img/profile-pic-home.webp" alt="Image of Sam">
+                        </div>
+                    </di>
                     <!--MY NAME-->
-                    <div class="full-name  col-span-2">
+                    <div class="full-name">
                         <ul class="my-names nam-colour">
-                            <li class="sam-colour"><img src="img/sam-name-colour.svg" alt="image of sam the name"></li>
+                            <li class="sam-colour"><img src="img/sam-name-colour.svg" alt="image of sam the name">
+                            </li>
                             <li class="atkin-colour"><img src="img/atkinson-name-colour.svg"
                                     alt="image of atkinson the name"></li>
                             <li class="mod-colour"><img src="img/modeste-name-colour.svg"
@@ -3088,18 +3091,27 @@
                         </ul>
                     </div>
                     <!--MY ROLE-->
-                    <div class="role-and-bg  col-span-2">
-                        <div class="dev-text">
-                            <h1 class="creative-text">Creative</h1>
-                            <h1 class="webDev-text"> Web Developer
-                            </h1>
-                        </div>
-                        <!--BACKGROUND-IMAGE-->
-                        <svg id="home-bottom" aria-hidden="true">
-                            <use href="#home-bg"></use>
-                        </svg>
-
+                    <div class="creative">
+                        <h1 class="creative-text">Creative</h1>
+                        <h1 class="webDev-text"> Web Developer
+                        </h1>
                     </div>
+                    <!--BACKGROUND-IMAGE-->
+                    <div class="home-bottom-bg">
+                        <svg viewbox="8 0 56.3 50" id="home-bottom" aria-hidden="true">
+                            <use href="#giltter"></use>
+                            <use href="#bg-home-bars"></use>
+                        </svg>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
             </section>
             <!--PORTFOLIO SECTION-->
             <section id="portfolio">
@@ -3107,7 +3119,7 @@
 
                     <header class="portfolio-header">
                         <!--BACKGROUND-IMAGE-PORTFOLIO-->
-                        <svg id="portfolio-bg" aria-hidden="true">
+                        <svg viewbox="0 28 256.3 150" id="portfolio-bg" aria-hidden="true">
                             <use href="#glitter-port-bg"></use>
                             <use href="#port-contact-bars"></use>
                         </svg>
@@ -3123,7 +3135,7 @@
                     <div class="projects-container">
                         <div class="project-slider">
                             <!--PROJECT-2-->
-                            <div class="project-container proj-2" id="proj-2">
+                            <div class="project-container proj-2  active-slide-proj" id="proj-2">
                                 <div class="project-img-links">
                                     <div class="proj-img">
                                         <img class="black-img" src="img/p2-b-w.webp" alt="image of profolio page">
@@ -3378,7 +3390,7 @@
                         <div class="proj-slider-nav">
 
                             <div class="ul-navs">
-                                <ul class="static">
+                                <ul class="static current-ul-port">
                                     <li id="static-1" class="balls active" data-tool-tip="One Page Portfolio">
                                     </li>
                                     <li id="2-static" class="balls" data-tool-tip="Web Form">
@@ -3445,7 +3457,8 @@
                     <p>A dancer is a life learner to maintain and up their skills.<br>
                         Dance is technical and creative.<br>
                         A web developer is all the above too.<br>
-                        The only difference is:<span class="dance-web">&quot;</span> When I execute a function I don't
+                        The only difference is:<br><span class="dance-web">&quot;</span> When I execute a function<br> I
+                        don't
                         have to
                         pointe my feet<span class="dance-web">&#33;&quot;</span><br>
                         I am very passionate about web development,and creating creative websites,
@@ -3519,8 +3532,7 @@
             </div>
             <small><span class="copy">&#169;</span> Samantha Atkinson Modeste 2023</small>
         </footer>
-        </div>
-
+    </div>
 </body>
 
 </html>
