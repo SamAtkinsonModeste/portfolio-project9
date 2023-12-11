@@ -96,11 +96,13 @@
 @mixin flexy ($disp: flex,
 	$dir: null,
 	$wrap: null,
-	$just: null) {
+	$just: null,
+	$align: null) {
 	display: $disp;
 	flex-direction: $dir;
 	flex-wrap: $wrap;
 	justify-content: $just;
+	align-items: $align;
 
 }
 
@@ -110,8 +112,8 @@
 @mixin mq($break-w, $break-h) {
 	$brk-widthvalue : map-get($breakpoints, $break-w);
 	$brk-heightvalue : map-get($breakheights, $break-h);
-	$sm : map-get($breakpoints, "xx-sm");
-	$short: map-get($breakheights, "xx-short");
+	$sm : map-get($breakpoints, "xxx-s-mobile-width");
+	$short: map-get($breakheights, "xx-short-mobile-height");
 
 	@if $brk-widthvalue < $sm and $brk-heightvalue < $short {
 		@media (max-width: $brk-widthvalue ) and (max-height: $brk-heightvalue) {
@@ -128,7 +130,11 @@
 }
 
 
+// @mixin mq-mobile-small
+
+
 //DEBUGING 
+
 @mixin debug ($pix: 1px, $color: null) {
 	border: solid $pix $color;
 

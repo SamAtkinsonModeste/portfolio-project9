@@ -61,7 +61,6 @@ main,
 .interactive,
 .logo {
     cursor: pointer;
-    // margin-right: f.em(2px);
 }
 
 
@@ -123,7 +122,7 @@ main,
 
 .hamburger {
     cursor: pointer;
-    // margin-right: f.em(2px);
+    margin-right: f.em(11px);
 }
 
 .burger {
@@ -170,69 +169,93 @@ main {
 #inner-home {
     gap: f.em(20px);
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 120px 1fr;
+    margin-bottom: f.em(8px);
 }
 
 .top-home {
     @include mix.flexy($just: space-between);
 }
 
+.home-top-bg {
+    width: 40%;
+    margin-left: f.em(25px);
+}
+
+.sam-profile-img-home {
+    width: 60%;
+    padding-right: f.em(10px);
+}
+
+
 #home-bg,
 #home-bottom {
-    height: 176px;
-    width: 146px;
+    width: f.em(170px);
 }
+
+#home-bg {
+    margin-left: f.em(-24px);
+}
+
 
 #home-bottom {
-    transform: rotate(180deg);
+    transform: rotate(180deg) translateY(-19px);
+
 }
 
-.sam-img-container {
-    width: f.em(180px);
-    padding-left: f.em(10px);
-}
+
 
 .full-name {
     position: relative;
-    top: f.em(-40px);
+    grid-column: 1/3;
 }
 
 .my-names {
-    padding-left: f.em(6px);
+    padding-left: f.em(2px);
+}
+
+.my-names li {
+    margin: f.em(5px) 0;
 }
 
 .sam-colour,
 .sam-gold {
-    width: f.em(80px);
+    width: f.em(100px);
+
 }
 
 .atkin-colour,
 .mod-colour,
 .atkin-gold,
 .mod-gold {
-    width: f.em(90px);
+    width: f.em(120px);
 }
 
 .nam-colour,
 .nam-gold {
     position: absolute;
-    top: 0;
+    left: f.em(16px);
 }
 
-.role-and-bg {
+.creative {
     width: 100%;
-    @include mix.flexy($just: space-between);
+    height: 50%;
+    margin-top: auto;
+    @include mix.flexy($dir: column, $just: flex-end);
+    grid-column: 1/2;
     // @include mix.debug($color: $red);
 }
 
-
-.dev-text {
-    margin-right: auto;
-    margin-top: f.em(56px);
-    width: 175px;
-    padding-top: f.em(25px);
-    // @include mix.debug($color: green);
-
+.home-bottom-bg {
+    grid-column: 2/3;
+    padding-left: f.em(26px);
+    // @include mix.debug($color: rgb(24, 170, 95));
 }
+
+
+
+
+
 
 
 /*********************************************
@@ -246,8 +269,8 @@ main {
 
 #inner-portfolio {
     position: relative;
+    margin-bottom: f.em(32px);
     // @include mix.debug($color: rgb(233, 51, 10));
-
 }
 
 .portfolio-header {
@@ -260,6 +283,8 @@ main {
     border-bottom: f.em(2px) solid $gold;
 }
 
+
+
 #portfolio-bg,
 #contact-bg {
     height: 200px;
@@ -271,7 +296,7 @@ main {
 .slide-nav {
     @include mix.flexy($just: center);
     margin-top: f.em(-15px);
-    margin-bottom: f.em(10px);
+    margin-bottom: f.em(2px);
 }
 
 .slide-nav li {
@@ -290,18 +315,18 @@ main {
 
 
 .project-slider {
-    width: 320px;
+    width: f.em(320px);
     @include mix.flexy();
     @extend %marg-cen;
     overflow: hidden;
-    // @include mix.debug($color: rgb(235, 28, 28));
 
+    // @include mix.debug($color: rgb(235, 28, 28));
 }
 
 .project-container,
 .logo-container {
-    width: 310px;
-    height: 400px;
+    width: f.em(313px);
+    height: f.em(293px);
     margin: 0 f.em(5px);
     @include mix.flexy($dir: column, $just: space-evenly);
     @include mix.bg-proj-cont-grad;
@@ -311,6 +336,7 @@ main {
 }
 
 
+
 .logo-container {
     @include mix.bg-proj-logo-grad;
     // @include mix.debug($color: rgb(28, 114, 235));
@@ -318,52 +344,62 @@ main {
 }
 
 .project-img-links {
-    width: 310px;
-    height: 230px;
+    width: f.em(310px);
+    height: f.em(230px);
     @include mix.flexy($just: space-between);
     margin: 0 auto;
 }
 
 .proj-img {
-    width: 108px;
-    height: 215px;
+    width: f.em(108px);
     margin-left: f.em(90px);
-    margin-top: f.em(5px);
     // @include mix.debug($color: pink);
+
 }
 
 .taller-proj {
-    height: 225px;
-    width: 72px;
+    width: f.em(72px);
     margin-left: f.em(110px);
+
+    //MEDIA QUERY
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        width: f.em(110px);
+        margin-left: f.em(90px);
+
+    }
 }
 
 .proj-4 .taller-proj {
-    width: 63px;
+    width: f.em(63px);
 
 }
 
+
 .proj-7 .taller-proj {
-    width: 78px;
+    width: f.em(78px);
 }
 
 
 .square-5 {
-    width: 208px;
-    height: 219px;
+    width: f.em(208px);
     margin-left: f.em(30px);
+
 }
 
 .square-6 {
-    width: 220px;
-    height: 217px;
+    width: f.em(220px);
     margin-left: f.em(18px);
+
 }
 
 .square-8 {
-    width: 207px;
-    height: 208px;
+    width: f.em(207px);
     margin-left: f.em(20px);
+}
+
+
+.active-slide-proj {
+    margin: 0 f.em(20px);
 }
 
 .proj-divider {
@@ -431,37 +467,41 @@ main {
 
 
 .proj-slider-nav {
-    height: 60px;
+    height: 30px;
     width: 100%;
     padding: 0 f.em(2px);
     overflow: hidden;
     @include mix.flexy($just: space-between);
     background: linear-gradient(69deg, $grey, $black, $black, $grey);
-    transform: translateY(-18px);
+    transform: translateY(15px);
     // @include mix.debug($color: rgb(208, 222, 11));
 }
 
 .arrow-nav {
+    @include mix.flexy($just: space-around, $align: center);
     width: 150px;
     margin-right: f.em(5px);
+    @include mix.debug($color: rgb(11, 131, 222));
 }
 
 #arrow-right,
 #arrow-left {
     width: 40px;
     height: 20px;
-    margin: f.em(18px) f.em(10px);
+    // margin: f.em(18px) f.em(10px);
 }
 
 #arrow-left {
     transform: rotate(180deg);
 }
 
+
+
 #divider {
     height: 30px;
     width: 5px;
-    margin: f.em(10px) f.em(4px);
 }
+
 
 
 
@@ -470,7 +510,6 @@ main {
     @include mix.flexy($dir: column);
     margin-left: f.em(5px);
     // @include mix.debug($color: rgb(222, 11, 36));
-
 }
 
 .ul-navs,
@@ -480,15 +519,20 @@ main {
     border-radius: $br-rad-lg;
 }
 
+
 .static,
 .interactive,
 .logos {
     margin: f.em(5px) 0;
     height: f.em(30px);
     @include mix.flexy();
+    // @include mix.debug($color: rgb(180, 222, 11));
+
 }
 
-
+.current-ul-port {
+    margin-top: 0;
+}
 
 
 .balls {
@@ -496,7 +540,7 @@ main {
     width: 20px;
     height: 20px;
     padding: f.em(2px);
-    margin: f.em(18px) f.em(10px) f.em(2px);
+    margin: f.em(5px) f.em(6px);
     border-radius: 100%;
     background: radial-gradient($rad-grad-1, $rad-grad-2, $black );
 }
@@ -531,12 +575,11 @@ main {
 #inner-about-me {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    // width: 320px;
 }
 
 #about-bg {
-    width: 97px;
-    height: 100px;
+    width: f.em(96px);
+    height: f.em(100px);
 }
 
 #inner-about-me p {
@@ -545,7 +588,8 @@ main {
 
 
 .me-about-img {
-    display: flex;
+    grid-column: 2/3;
+    @include mix.flexy();
 }
 
 
@@ -553,7 +597,7 @@ main {
 
 .dev-list,
 .design-list {
-    @include mix.flexy($just: space-evenly);
+    @include mix.flexy($just: space-evenly, $align: center);
 }
 
 .dev-web,
@@ -595,6 +639,7 @@ main {
 
 .dev-list,
 .design-list {
+    height: f.em(46px);
     padding: f.em(6px) 0;
     border-radius: f.em(32px);
     @include mix.ul-bg($col-1: $ul-rad-grad-1, $col-2: $black);
@@ -610,14 +655,8 @@ main {
     CONTACT ME            
 *******************************/
 
-
-#contact-me {
-    grid-area: contact;
-
-}
-
 #contact-me-form {
-    width: 99%;
+    width: f.em(310px);
     transform: translateY(f.em(-140px));
     // @include mix.debug($color: rgb(98, 46, 220));
 
@@ -667,9 +706,34 @@ textarea:focus {
 
 textarea:focus {
     height: f.em(60px);
-    transform: translateY(-36px);
+    transform: translateY(-38px);
+    // @include mix.debug($color: rgb(184, 181, 4));
+
 
 }
+
+textarea::-webkit-scrollbar {
+    width: f.em(10px);
+}
+
+textarea::-webkit-scrollbar-track {
+    @include mix.box-shdo($in: inset, $blur: f.em(3px), $colour: $gold);
+    border-radius: f.em(8px);
+}
+
+textarea::-webkit-scrollbar-thumb {
+    @include mix.box-shdo($in: inset, $blur: f.em(3px), $colour: $red);
+    border-radius: f.em(5px);
+}
+
+textarea::-webkit-scrollbar-corner,
+textarea::-webkit-resizer {
+    background: $black;
+
+}
+
+
+
 
 #submit {
     background: $black;
@@ -681,6 +745,8 @@ textarea:focus {
 
 }
 
+
+
 /******************************
             FOOTER
 *******************************/
@@ -690,11 +756,12 @@ footer {
     grid-area: footer;
     // height: 60px;
     background: $black;
-    position: fixed;
+
     bottom: 0;
     width: 100%;
     z-index: 5;
-    @include mix.debug($color: rgb(184, 4, 172));
+
+    // @include mix.debug($color: rgb(184, 4, 172));
 
 }
 

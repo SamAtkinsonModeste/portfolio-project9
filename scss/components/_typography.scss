@@ -85,14 +85,25 @@ textarea,
 .webDev-text {
     @include mix.text($size: f.em(17px), $l-height: f.em(17px));
     margin: 0;
-    margin-top: f.em(20px);
     padding-left: f.em(6px);
+    width: 50%;
+
+    //MEDIA QUERY
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        @include mix.text($size: f.em(25px), $l-height: f.em(25px));
+    }
 
 }
 
 .webDev-text {
     @include mix.text($size: f.em(15px));
     margin-top: f.em(4px);
+
+    //MEDIA QUERY
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        @include mix.text($size: f.em(25px));
+        margin-top: 0;
+    }
 }
 
 
@@ -104,7 +115,7 @@ textarea,
 
 .head-port {
     @include mix.text($size: f.em(25px));
-    margin-top: f.em(-105px);
+    margin-top: f.em(-118px);
 }
 
 .slide-nav,
@@ -117,14 +128,27 @@ textarea,
 .live-text {
     font-size: f.em(10px);
     font-weight: bold;
-    transform: translateY(-150px);
+    transform: translate(0, -150px);
+
+    //MEDIA QUERIES
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+
+        transform: translate(6px, -195px);
+    }
+
 }
 
 .info-head,
 .logo-text,
 #about-me p {
-    @include mix.text($size: f.em(14px), $l-height: f.em(24px));
+    @include mix.text($size: f.em(11px), $l-height: f.em(22px));
     text-align: center;
+
+    //MEDIA QUERIES
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        @include mix.text($size: f.em(14px), $l-height: f.em(23px));
+        margin-bottom: f.em(5px);
+    }
 }
 
 .proj-7 .info-head,
@@ -133,7 +157,7 @@ textarea,
 }
 
 .created-with {
-    @include mix.text($size: f.em(15px), $l-height: f.em(24px));
+    @include mix.text($size: f.em(14px), $l-height: f.em(24px));
 }
 
 .way-logo {
@@ -159,16 +183,17 @@ textarea,
     text-align: right;
 }
 
-.about-me,
+
 .skill-head {
     @include mix.text($size: f.em(16px), $l-height: f.em(32px));
 
 }
 
 .about-me {
-    width: 65px;
-    margin-top: f.em(39px);
-    margin-right: f.em(-31px);
+    @include mix.text($size: f.em(22px), $l-height: f.em(32px));
+    width: f.em(70px);
+    // margin-top: f.em(39px);
+    // margin-right: f.em(-31px);
 }
 
 .skill-head {
