@@ -1,0 +1,161 @@
+@use '../utilities/variables' as *;
+@use '../utilities/extends' as *;
+@use '../utilities/functions' as f;
+@use '../utilities/mixins' as mix;
+
+
+
+/***************************
+  CONTAINERS MEDIA QUERIES
+*********************************/
+/*********HOME************/
+#inner-home {
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        height: f.em(660px);
+        grid-template-rows: 1fr 160px 1fr;
+        // @include mix.debug($color: rgb(249, 8, 8));
+    }
+}
+
+#home-bottom {
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        transform: rotate(180deg) translateY(-74px);
+    }
+}
+
+.sam-colour,
+.sam-gold {
+
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        width: f.em(120px);
+    }
+
+}
+
+.atkin-colour,
+.mod-colour,
+.atkin-gold,
+.mod-gold {
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        width: f.em(160px);
+    }
+
+}
+
+
+.nam-colour,
+.nam-gold {
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        left: f.em(8px);
+    }
+}
+
+/**********PORTFOLIO************/
+#inner-portfolio {
+
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        height: f.em(660px);
+        grid-template-rows: 1fr 160px 1fr;
+        // @include mix.debug($color: rgb(233, 51, 10));
+    }
+
+}
+
+
+.project-slider {
+
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        width: f.em(355px);
+        // @include mix.debug($color: rgb(235, 28, 28));
+    }
+
+}
+
+.project-container,
+.logo-container {
+
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        width: f.em(355px);
+        height: f.em(460px);
+        margin: 0 f.em(20px);
+        // @include mix.debug($color: rgb(28, 114, 235));
+    }
+
+}
+
+.project-img-links {
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        width: f.em(325px);
+        height: f.em(330px);
+        // @include mix.debug($color: rgb(28, 114, 235));
+
+    }
+}
+
+.proj-img {
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        width: f.em(165px);
+        margin-left: f.em(40px);
+        // @include mix.debug($color: pink);
+    }
+}
+
+
+.proj-4 .taller-proj {
+
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        width: f.em(100px);
+
+    }
+
+}
+
+.proj-4 .project-info {
+
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        margin-top: f.em(10px);
+    }
+}
+
+.proj-7 .taller-proj {
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        width: f.em(120px);
+
+    }
+}
+
+.square-5,
+.square-6,
+.square-8 {
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        width: f.em(250px);
+        margin-left: f.em(3px);
+    }
+}
+
+/**********ABOUT ME***************/
+#inner-about-me,
+#inner-contact {
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        height: f.em(641px);
+    }
+
+}
+
+
+/**********CONTACT ME*******************/
+
+#inner-contact {
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        // margin-top: f.em(60px);
+    }
+
+}
+
+/***********FOOTER************/
+footer {
+    @include mix.mq($break-w: 'xxx-s-mobile-width', $break-h: 'x-short-mobile-height') {
+        position: fixed;
+        // @include mix.debug($color: rgb(184, 4, 172));
+    }
+}
